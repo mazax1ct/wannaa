@@ -1,0 +1,99 @@
+.video-block
+  text-align: center
+
+  @media(min-width: 1024px)
+    position: relative
+    text-align: left
+
+  &__content
+    @media(min-width: 1024px)
+      display: flex
+
+    &::after
+      @media(min-width: 1024px)
+        content: ''
+        display: block
+        height: 0
+        padding-bottom: 32.352%
+
+  &__content-inner
+    @media(min-width: 1024px)
+      display: flex
+      flex-direction: column
+      justify-content: center
+      min-width: 100%
+      position: relative
+      padding-left: calc(57.51633% + 35px)
+
+    @media(min-width: 1900px)
+      padding-left: calc(57.51633% + 70px)
+
+  .decorated-title
+    @media(min-width: 1024px)
+      background-position: 0 0
+
+  &__video
+    display: block
+    margin-left: -20px
+    margin-right: -20px
+    margin-bottom: 25px
+    position: relative
+
+    @media(min-width: 768px)
+      margin-left: 0
+      margin-right: 0
+
+    @media(min-width: 1024px)
+      left: 0
+      margin-bottom: 0
+      position: absolute
+      top: 0
+      width: 57.51633%
+      z-index: 1
+
+    &::before
+      background-color: rgba(#07070f, 0.4)
+      bottom: 0
+      content: ''
+      left: 0
+      position: absolute
+      right: 0
+      top: 0
+      z-index: 1
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cg fill='%23fff'%3E%3Cpath d='M195.724 158.646L179.9 149.5a1.7 1.7 0 0 0-2.544 1.468v18.283a1.7 1.7 0 0 0 2.544 1.468l15.821-9.142a1.7 1.7 0 0 0 .003-2.931zm-14.974 7.672v-12.407l10.736 6.2z' transform='translate(-159.345 -134.114)'/%3E%3Cpath d='M26 0a26 26 0 1 0 26 26A25.986 25.986 0 0 0 26 0zm0 48.609A22.609 22.609 0 1 1 48.609 26 22.634 22.634 0 0 1 26 48.609z'/%3E%3C/g%3E%3C/svg%3E")
+      background-repeat: no-repeat
+      background-position: 0 0
+      background-size: 32px 32px
+      content: ''
+      height: 32px
+      left: 50%
+      opacity: 0.7
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 32px
+      z-index: 2
+
+      @media(min-width: 1200px)
+        background-size: 52px 52px
+        height: 52px
+        width: 52px
+
+    &:hover,
+    &:focus
+      .video-block__image
+        transform: scale(1.02)
+
+  &__picture
+    overflow: hidden
+
+  &__picture,
+  &__image
+    display: block
+
+  &__image
+    transform: scale(1)
+    transition: transform 0.3s
+    width: 100%

@@ -1,0 +1,82 @@
+body
+  color: $text-color
+  font-family: 'GT Eesti Pro Display', Arial, sans-serif
+  font-size: 16px
+  line-height: 24px
+  letter-spacing: 0.4px
+
+a
+  color: $text-color
+
+b,
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6
+  font-weight: 500
+
+h1, .h1
+  font-size: 18px
+  line-height: 21px
+  letter-spacing: 0.45px
+
+  @media(min-width: 1200px)
+    font-size: 36px
+    line-height: 41px
+    letter-spacing: 0.9px
+
+h2, .h2
+  font-size: 18px
+  line-height: 26px
+  letter-spacing: 0.45px
+  margin-bottom: 30px
+
+  @media(min-width: 1200px)
+    font-size: 30px
+    line-height: 44px
+    letter-spacing: 0.75px
+
+.decorated-title
+  background: url('../images/icons/dragonfly.svg') no-repeat 50% 0 / 22px 16px transparent
+  padding-top: 55px
+
+  @media(min-width: 1200px)
+    background-position: 0 0
+    background-size: 35px 22px
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6,
+p,
+ul,
+ol,
+table,
+.table-responsive
+  margin-top: 0
+  margin-bottom: 20px
+
+  &:last-child
+    margin-bottom: 0
+
+table
+  border-collapse: collapse
+  max-width: 100%
+  text-align: left
+  width: 100%
+
+  th,
+  td
+    border: none
+    border-bottom: 1px solid
+    padding: 10px
+    vertical-align: top
+
+img
+  height: auto
+  max-width: 100%
+  vertical-align: top

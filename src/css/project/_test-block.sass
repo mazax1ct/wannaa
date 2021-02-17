@@ -1,0 +1,83 @@
+.test-block
+  text-align: center
+
+  @media(min-width: 1024px)
+    text-align: left
+
+  &__content
+    @media(min-width: 1024px)
+      display: flex
+
+    &::after
+      @media(min-width: 1024px)
+        content: ''
+        display: block
+        height: 0
+        padding-bottom: 45.75%
+
+  &__content-inner
+    @media(min-width: 1024px)
+      display: flex
+      flex-direction: column
+      justify-content: center
+      min-width: 100%
+      position: relative
+      padding-left: calc(47.05882% + 35px)
+
+    @media(min-width: 1900px)
+      padding-left: calc(47.05882% + 70px)
+
+  .decorated-title
+    @media(min-width: 1024px)
+      background-position: 0 0
+
+  &__image-block
+    margin-left: -20px
+    margin-right: -20px
+    margin-bottom: 20px
+
+    @media(min-width: 1024px)
+      left: 0
+      margin-bottom: 0
+      margin-left: 0
+      margin-right: 0
+      position: absolute
+      top: 0
+      width: 47.05882%
+      z-index: 1
+
+  &__picture,
+  &__image
+    display: block
+
+  &__image
+    width: 100%
+
+  &__image-caption
+    bottom: 20px
+    color: rgba(#fff, 0.3)
+    display: none
+    font-size: 80px
+    left: auto
+    letter-spacing: 3px
+    line-height: 80px
+    position: absolute
+    right: -105px
+
+    @media(min-width: 1400px)
+      font-size: 120px
+      line-height: 100px
+      right: -155px
+
+    @media(min-width: 1024px)
+      display: block
+
+    span
+      color: rgba(#908875, 0.07)
+
+  .button
+    max-width: 490px
+    width: 100%
+
+    @media(min-width: 1024px)
+      max-width: 265px

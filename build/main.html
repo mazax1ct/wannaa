@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Главная</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#538070">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="preload" href="fonts/subset-GTEestiProDisplay-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/subset-GTEestiProDisplay-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/subset-GTEestiProDisplay-Medium.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+  <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="cart" viewBox="0 0 20 20">
+      <path stroke-width="0.3px" d="M63.1 15.452L62.08 3.926a.493.493 0 0 0-.49-.45h-2.105a3.532 3.532 0 0 0-7.062 0h-2.106a.49.49 0 0 0-.49.45L48.8 15.452v.044a2.547 2.547 0 0 0 2.683 2.38h8.941a2.547 2.547 0 0 0 2.683-2.38.178.178 0 0 0-.007-.044zM55.954.987A2.547 2.547 0 0 1 58.5 3.476h-5.09A2.547 2.547 0 0 1 55.954.987zm4.471 15.9h-8.942a1.575 1.575 0 0 1-1.7-1.371l.98-11.05h1.652v1.5a.493.493 0 0 0 .987 0v-1.5H58.5v1.5a.493.493 0 0 0 .987 0v-1.5h1.652l.983 11.05a1.577 1.577 0 0 1-1.698 1.372z" transform="translate(-46.6) translate(.412 .612)"/>
+    </symbol>
+    <symbol id="burger" viewBox="0 0 24 24">
+      <g>
+          <path d="M0 0H24V2H0z" transform="translate(0 5)"/>
+          <path d="M0 0H24V2H0z" transform="translate(0 5) translate(0 6)"/>
+          <path d="M0 0H16V2H0z" transform="translate(0 5) translate(0 12)"/>
+      </g>
+    </symbol>
+    <symbol id="close" viewBox="0 0 16 16">
+      <path d="M0.2,1.3c-0.3-0.3-0.3-0.8,0-1.1c0.3-0.3,0.8-0.3,1.1,0L8,6.9l6.7-6.7c0.3-0.3,0.8-0.3,1.1,0c0.3,0.3,0.3,0.8,0,1.1L9.1,8l6.7,6.7c0.3,0.3,0.3,0.8,0,1.1c-0.3,0.3-0.8,0.3-1.1,0l0,0L8,9.1l-6.7,6.7c-0.3,0.3-0.8,0.3-1.1,0c-0.3-0.3-0.3-0.8,0-1.1L6.9,8L0.2,1.3z"/>
+    </symbol>
+  </svg>
+
+  <header class="header">
+    <div class="header__inner">
+      <a class="header__logo" href="main.hrml"><img src="images/logo.svg" alt="WANNA A."></a>
+      <div class="header__cart-block">
+        <a class="header-cart" href="cart.html">
+          <span class="header-cart__text">Товаров на: 3 500 ₽</span>
+          <span class="header-cart__icon-block not-empty"><svg class="header-cart__icon"><use xlink:href="#cart"></use></svg></span>
+        </a>
+      </div>
+      <button class="js-menu-opener header__burger" type="button" title="Меню"><svg class="header__burger-icon"><use xlink:href="#burger"></use></svg></button>
+    </div>
+    <div class="main-menu">
+      <div class="main-menu__top">
+        <div class="main-menu__logo"><img src="images/logo.svg" alt="WANNA A."></div>
+        <button class="js-menu-closer main-menu__closer" type="button" title="Закрыть меню"><svg class="main-menu__closer-icon"><use xlink:href="#close"></use></svg></button>
+      </div>
+      <nav class="main-menu__nav">
+        <ul class="main-menu__list">
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Женская коллекция</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Мужская коллекция</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Пройти тест и выбрать надпись</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Философия WANNA A.</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <p class="main-menu__side-link">Следите за нами в <a href="#" target="_blank" rel="nofollow noreferrer">INSTAGRAM</a></p>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div class="container">
+      <div class="page-block">
+        <div class="js-main-banner main-banner">
+          <div class="main-banner__slide">
+            <a class="main-banner__link" href="#">
+              <picture class="main-banner__picture">
+                <source srcset="images/content/banner/banner_desktop.jpg, images/content/banner/banner_desktop@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="main-banner__image" src="images/content/banner/banner_mob.jpg" srcset="images/content/banner/banner_mob@2x.jpg 2x" alt="alt">
+              </picture>
+            </a>
+          </div>
+          <div class="main-banner__slide">
+            <a class="main-banner__link" href="#">
+              <picture class="main-banner__picture">
+                <source srcset="images/content/banner/banner_desktop.jpg, images/content/banner/banner_desktop@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="main-banner__image" src="images/content/banner/banner_mob.jpg" srcset="images/content/banner/banner_mob@2x.jpg 2x" alt="alt" loading="lazy">
+              </picture>
+            </a>
+          </div>
+          <div class="main-banner__slide">
+            <a class="main-banner__link" href="#">
+              <picture class="main-banner__picture">
+                <source srcset="images/content/banner/banner_desktop.jpg, images/content/banner/banner_desktop@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="main-banner__image" src="images/content/banner/banner_mob.jpg" srcset="images/content/banner/banner_mob@2x.jpg 2x" alt="alt" loading="lazy">
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-block page-block">
+        <div class="video-block__content">
+          <div class="video-block__content-inner">
+            <h2 class="decorated-title">МИР РАЗУЧИЛСЯ ФЛИРТОВАТЬ.<br> Я С ЭТИМ НЕ СОГЛАСНА.<br> БУДУ ФЛИРТОВАТЬ С ЭТИМ МИРОМ<br> ЧЕРЕЗ ОДЕЖДУ!</h2>
+            <a class="video-block__video" href="#">
+              <picture class="video-block__picture">
+                <source srcset="images/content/video-block/desktop/photo_video.jpg, images/content/video-block/desktop/photo_video@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="video-block__image" src="images/content/video-block/mobile/photo_video.jpg" srcset="images/content/video-block/mobile/photo_video@2x.jpg 2x" alt="alt" loading="lazy">
+              </picture>
+            </a>
+            <p>Играй, смейся, провоцируй, флиртуй!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="phrase-block page-block">
+        <h2 class="decorated-title">СМЫСЛЫ ВНУТРИ</h2>
+        <div class="phrase-block__list">
+          <div class="phrase-block__list-item">
+            <img class="phrase-block__image" src="images/content/phrase-block/ph_fraza_1.jpg" srcset="images/content/phrase-block/ph_fraza_1@2x.jpg 2x" alt="alt" loading="lazy">
+            <p class="phrase-block__image-caption">Enjoy the journey</p>
+          </div>
+          <div class="phrase-block__list-item">
+            <img class="phrase-block__image" src="images/content/phrase-block/ph_fraza_2.jpg" srcset="images/content/phrase-block/ph_fraza_2@2x.jpg 2x" alt="alt" loading="lazy">
+            <p class="phrase-block__image-caption">Smart & ambitious</p>
+          </div>
+          <div class="phrase-block__list-item">
+            <img class="phrase-block__image" src="images/content/phrase-block/ph_fraza_3.jpg" srcset="images/content/phrase-block/ph_fraza_3@2x.jpg 2x" alt="alt" loading="lazy">
+            <p class="phrase-block__image-caption">No titles, just vibes</p>
+            <p class="phrase-block__image-caption">No risk - no magic</p>
+          </div>
+        </div>
+        <a class="button" href="#">твоя фраза</a>
+      </div>
+
+      <div class="test-block page-block">
+        <div class="test-block__content">
+          <div class="test-block__content-inner">
+            <h2 class="decorated-title">ЯРКАЯ ЖИЗНЬ НАЧИНАЕТСЯ С ЯРКИХ МЫСЛЕЙ</h2>
+            <p>Только они помогают нам верить в себя! Пройди&nbsp;тест&nbsp;«КАКАЯ&nbsp;Я?»</p>
+            <div class="test-block__image-block">
+              <picture class="test-block__picture">
+                <source srcset="images/content/test-block/desktop/ph_test.jpg, images/content/test-block/desktop/ph_test@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="test-block__image" src="images/content/test-block/mobile/ph_test.jpg" srcset="images/content/test-block/mobile/ph_test@2x.jpg 2x" alt="alt" loading="lazy">
+              </picture>
+              <p class="test-block__image-caption">КАКАЯ <span>Я?</span></p>
+            </div>
+            <a class="button" href="#">пройти тест</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="print-block page-block">
+        <h2 class="decorated-title">А КАКАЯ НА ЭТО БУДЕТ РЕАКЦИЯ У МИРА?</h2>
+        <div class="print-block__list">
+          <div class="print-block__list-item">
+            <img class="print-block__image" src="images/content/print-block/ph_print_1.jpg" srcset="images/content/print-block/ph_print_1@2x.jpg 2x" alt="alt" loading="lazy">
+          </div>
+          <div class="print-block__list-item">
+            <img class="print-block__image" src="images/content/print-block/ph_print_2.jpg" srcset="images/content/print-block/ph_print_2@2x.jpg 2x" alt="alt" loading="lazy">
+          </div>
+          <div class="print-block__list-item">
+            <img class="phrase-block__image" src="images/content/print-block/ph_print_3.jpg" srcset="images/content/print-block/ph_print_3@2x.jpg 2x" alt="alt" loading="lazy">
+          </div>
+        </div>
+        <p>В принтах-картинках все главные женские смыслы.</p>
+        <a class="button" href="#">ВЫБРАТЬ КАРТИНКУ</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo"><img src="images/logo.svg" alt="WANNA A."></div>
+      <ul class="footer__nav">
+        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Философия WANNA A.</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="#">О нас говорят</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Доставка</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Возврат</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Помощь с размером</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Публичная оферта</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Политика конфиденциальности</a></li>
+      </ul>
+    </div>
+    <p class="footer__bottom">2021 © Wanna A.</p>
+  </footer>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="js/slick.min.js"></script>
+</body>
+
+</html>
