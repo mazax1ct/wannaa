@@ -1,0 +1,57 @@
+.subscribe
+  text-align: center
+
+  @media(min-width: 1024px)
+    align-items: center
+    display: flex
+    justify-content: space-between
+    position: relative
+    padding-top: 60px
+    padding-bottom: 60px
+    text-align: left
+
+  @media(min-width: 1200px)
+    padding-top: 100px
+    padding-bottom: 100px
+
+  &::after
+    @media(min-width: 1024px)
+      background-color: #f6f6f6
+      content: ''
+      height: 100%
+      left: 50%
+      position: absolute
+      top: 0
+      transform: translateX(-50%)
+      width: 4000px
+      z-index: -1
+
+  h2
+    @media(min-width: 1024px)
+      background-position: 0 0
+
+  &__text
+    margin-bottom: 30px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+
+  &__form
+    max-width: 540px
+    margin-left: auto
+    margin-right: auto
+
+    @media(min-width: 1024px)
+      margin-left: 0
+      margin-right: 0
+
+  &__form-label
+    display: block
+    margin-bottom: 15px
+
+  .input
+    text-align: center
+
+  .button
+    margin-bottom: 25px
+    width: 100%

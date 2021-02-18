@@ -1,7 +1,12 @@
 .print-block
+  text-align: center
+
   @media(min-width: 768px)
     display: flex
     flex-direction: column
+
+  @media(min-width: 1024px)
+    text-align: left
 
   h2
     @media(min-width: 1024px)
@@ -15,21 +20,27 @@
     @media(min-width: 768px)
       align-items: center
       display: flex
-      margin-left: -15px
-      margin-right: -15px
+      margin-left: -10px
+      margin-right: -10px
       margin-bottom: 30px
       order: 3
 
     @media(min-width: 1024px)
-      margin-top: 60px
+      margin-left: -15px
+      margin-right: -15px
+      margin-top: 40px
 
   &__list-item
     position: relative
 
     @media(min-width: 768px)
+      padding-left: 10px
+      padding-right: 10px
+      width: 33.33333%
+
+    @media(min-width: 1024px)
       padding-left: 15px
       padding-right: 15px
-      width: 33.33333%
 
     &:nth-child(2),
     &:nth-child(3)

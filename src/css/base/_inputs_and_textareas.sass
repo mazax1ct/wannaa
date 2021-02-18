@@ -1,75 +1,90 @@
 .input,
 .textarea
   background-color: #fff
-  border: 1px solid #ceced0
-  border-radius: 5px
-  color: inherit
+  border: 1px solid $grey-3
+  border-radius: 0
+  color: $text-color
+  font-size: 16px
+  transition: border-color 0.3s, color 0.3s
   width: 100%
 
+  @media(min-width: 1200px)
+    font-size: 18px
+
   &:focus
-    border-color: #303032
-    box-shadow: 0 0 5px 2px #00d123
+    border-color: $grey-2
+    box-shadow: none
+    outline: none
 
   &.error
-    border-color: #ff0000
+    border-color: $error-color
 
     &:focus
-      border-color: #ff0000
-      box-shadow: 0 0 5px 2px #ff0000
+      border-color: $error-color
 
   &:disabled
-    opacity: 0.5
+    background-color: $grey-4
+    color: $grey-3
+    cursor: default
 
 .input
   height: 50px
-  line-height: 50px
-  padding: 0 10px
+  line-height: 21px
+  padding: 0 20px
+
+  @media(min-width: 1200px)
+    font-size: 18px
+    height: 60px
 
 .textarea
-  height: 100px
-  padding: 10px
+  height: 155px
+  line-height: 24px
+  padding: 20px
   resize: none
+  vertical-align: top
 
 /*placeholder*/
-.input::-webkit-input-placeholder
-  color: #303032
-  opacity: 1
+.input,
+.textarea
+  &::-webkit-input-placeholder
+    color: $grey-2
+    opacity: 1
 
-.input::-moz-placeholder
-  color: #303032
-  opacity: 1
+  &::-moz-placeholder
+    color: $grey-2
+    opacity: 1
 
-.input:-ms-input-placeholder
-  color: #303032
-  opacity: 1
+  &:-ms-input-placeholder
+    color: $grey-2
+    opacity: 1
 
-.textarea::-webkit-input-placeholder
-  color: #303032
-  opacity: 1
+  &::-webkit-input-placeholder
+    color: $grey-2
+    opacity: 1
 
-.textarea::-moz-placeholder
-  color: #303032
-  opacity: 1
+  &::-moz-placeholder
+    color: $grey-2
+    opacity: 1
 
-.textarea:-ms-input-placeholder
-  color: #303032
-  opacity: 1
+  &:-ms-input-placeholder
+    color: $grey-2
+    opacity: 1
 
 /*:focus placeholder*/
 .input:focus::-webkit-input-placeholder
-  opacity: 0
+  color: $text-color
 
 .input:focus::-moz-placeholder
-  opacity: 0
+  color: $text-color
 
 .input:focus:-ms-input-placeholder
-  opacity: 0
+  color: $text-color
 
 .textarea:focus::-webkit-input-placeholder
-  opacity: 0
+  color: $text-color
 
 .textarea:focus::-moz-placeholder
-  opacity: 0
+  color: $text-color
 
 .textarea:focus:-ms-input-placeholder
-  opacity: 0
+  color: $text-color

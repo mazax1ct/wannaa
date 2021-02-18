@@ -34,6 +34,12 @@
       transform: translate(-50%, -50%)
       width: 205px
 
+  &__feedback-block
+    display: none
+
+    @media(min-width: 1024px)
+      display: block
+
   &__cart-block
     order: 3
 
@@ -67,12 +73,33 @@
     height: 24px
     width: 24px
 
+.feedback-link
+  align-items: center
+  color: $grey-1
+  display: flex
+  font-size: 14px
+  text-decoration: none
+
+  &:hover,
+  &:focus
+    text-decoration: underline
+
+  &__icon
+    fill: $text-color
+    height: 20px
+    margin-right: 10px
+    width: 20px
+
 .header-cart
   align-items: center
   color: $grey-1
   display: flex
   font-size: 14px
   text-decoration: none
+
+  &:hover,
+  &:focus
+    text-decoration: underline
 
   &__text
     display: none
@@ -221,15 +248,25 @@
     &:focus
       text-decoration: underline
 
-  &__side-link
-    background: url('../images/icons/dragonfly.svg') no-repeat 50% 0 / 25px 16px transparent
+  &__bottom
     margin-top: auto
-    padding-top: 40px
     padding-bottom: 40px
+    padding-left: 20px
+    padding-right: 20px
     text-align: center
 
     @media(min-width: 1024px)
       display: none
+
+    .button
+      margin-bottom: 40px
+      max-width: 490px
+      width: 100%
+
+  &__side-link
+    background: url('../images/icons/dragonfly.svg') no-repeat 50% 0 / 25px 16px transparent
+    padding-top: 40px
+    text-align: center
 
     a
       font-weight: 500

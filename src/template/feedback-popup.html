@@ -1,0 +1,36 @@
+<div id="feedback_popup" class="popup">
+  <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon"><use xlink:href="#close"></use></svg></button>
+
+  <p class="popup__title">МЫ МОЖЕМ ВАМ ПОМОЧЬ?</p>
+  <p class="popup__text">Наша клиентская служба будет рада ответить на ваши запросы.</p>
+
+  <form class="popup__form" action="">
+    <div class="select-wrapper">
+      <select class="js-select" placeholder="Тип запроса*">
+        <option></option>
+        <option>Информация об изделии</option>
+        <option>Предложение сотрудничества</option>
+      </select>
+    </div>
+
+    <div class="popup__form-row">
+      <div class="popup__form-cell">
+        <label>
+          <input class="input" type="text" value="" placeholder="Ваше имя">
+        </label>
+      </div>
+      <div class="popup__form-cell">
+        <label>
+          <input class="js-phone-mask input" type="text" value="" placeholder="Ваш телефон">
+        </label>
+      </div>
+    </div>
+
+    <label>
+      <textarea class="textarea" placeholder="Напишите свое сообщение здесь"></textarea>
+    </label>
+
+    <button class="button button--type_2" type="submit">отправить заявку</button>
+  </form>
+  <p>Нажимая на кнопку «Отправить заявку», вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+</div>

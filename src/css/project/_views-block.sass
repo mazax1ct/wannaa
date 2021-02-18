@@ -1,0 +1,102 @@
+.views-block
+  text-align: center
+
+  @media(min-width: 1024px)
+    text-align: right
+
+  h2
+    @media(min-width: 1024px)
+      background-position: 100% 0
+
+  .mobile-hidden
+    display: none
+
+    @media(min-width: 1024px)
+      display: block
+
+  .tablet-hide
+    @media(min-width: 1024px)
+      display: none
+
+  .button
+    margin-top: 20px
+    margin-left: auto
+    margin-right: auto
+    max-width: 490px
+    width: 100%
+
+.views-list
+  display: flex
+  list-style: none
+  margin-left: -20px
+  margin-right: -20px
+  margin-bottom: 0
+  overflow-x: auto
+  padding-left: 20px
+  padding-right: 20px
+  padding: 0
+
+  @media(min-width: 768px)
+    flex-wrap: wrap
+    margin-left: -10px
+    margin-right: -10px
+    padding-left: calc(47.742% + 10px)
+    padding-right: 0
+    position: relative
+    overflow: visible
+
+  @media(min-width: 1024px)
+    margin-top: 60px
+
+  &__item
+    min-width: 100%
+    padding-right: 20px
+    width: 100%
+
+    @media(min-width: 768px)
+      min-width: 0
+      padding-left: 10px
+      padding-right: 10px
+      margin-bottom: 20px
+      width: 50%
+
+    &:nth-child(1)
+      @media(min-width: 768px)
+        display: flex
+        flex-direction: column
+        height: 100%
+        left: 0
+        min-width: 0
+        margin-bottom: 0
+        position: absolute
+        top: 0
+        width: 47.742%
+
+    &:nth-last-child(1),
+    &:nth-last-child(2)
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+    .button
+      margin-top: auto
+      max-width: 100%
+      width: 100%
+
+  &__link,
+  &__picture,
+  &__image
+    display: block
+
+  &__link
+    &:hover,
+    &:focus
+      .views-list__image
+        transform: scale(1.02)
+
+  &__picture
+    overflow: hidden
+
+  &__image
+    transition: transform 0.3s
+    transform: scale(1)
+    width: 100%

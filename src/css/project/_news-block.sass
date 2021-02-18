@@ -1,0 +1,88 @@
+.news-block
+  h2
+    text-align: center
+
+    @media(min-width: 1024px)
+      background-position: 0 0
+      margin-bottom: 60px
+      text-align: left
+
+.news-list
+  display: flex
+  list-style: none
+  margin-left: -20px
+  margin-right: -20px
+  overflow-x: auto
+  padding-left: 20px
+  padding-right: 20px
+  padding: 0
+
+  @media(min-width: 768px)
+    margin-left: -10px
+    margin-right: -10px
+    padding-left: 0
+    padding-right: 0
+
+  @media(min-width: 1024px)
+    margin-left: -15px
+    margin-right: -15px
+
+  &__item
+    min-width: 100%
+    padding-right: 20px
+    width: 100%
+
+    @media(min-width: 768px)
+      min-width: 0
+      padding-left: 10px
+      padding-right: 10px
+      width: 33.33333%
+
+    @media(min-width: 1024px)
+      padding-left: 15px
+      padding-right: 15px
+
+    &:nth-child(1)
+      @media(min-width: 1024px)
+        width: 33.333333%
+
+    &:nth-child(2)
+      @media(min-width: 1024px)
+        width: 41.667%
+
+    &:nth-child(3)
+      @media(min-width: 1024px)
+        width: 24.99967%
+
+.news
+  display: block
+  text-decoration: none
+
+  &:hover,
+  &:focus
+    .news__image
+      transform: scale(1.02)
+
+  &__picture,
+  &__image,
+  &__title,
+  &__pseudo-link
+    display: block
+
+  &__picture
+    margin-bottom: 15px
+    overflow: hidden
+
+  &__image
+    transform: scale(1)
+    transition: transform 0.3s
+    width: 100%
+
+  &__title
+    font-weight: 500
+    margin-bottom: 20px
+
+  &__pseudo-link
+    font-size: 15px
+    line-height: 20px
+    text-decoration: underline

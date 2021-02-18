@@ -16,8 +16,11 @@ body
   min-width: 320px
   overflow-wrap: break-word
 
-  &.overflow
+  &.menu-open
     overflow: hidden
+
+    @media(min-width: 1024px)
+      overflow: auto
 
 .container
   margin-left: auto
@@ -28,15 +31,20 @@ body
 
 .page-content
   flex: 1 0 auto
+  overflow-x: hidden
   padding-top: 70px
   padding-bottom: 60px
 
   @media(min-width: 1024px)
     padding-top: 175px
+    padding-bottom: 100px
 
 .page-block
   &:not(:last-child)
     margin-bottom: 40px
+
+    @media(min-width: 768px)
+      margin-bottom: 60px
 
     @media(min-width: 1024px)
       margin-bottom: 100px

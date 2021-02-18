@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
   <link rel="manifest" href="images/favicon/site.webmanifest">
-  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#538070">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#000000">
   <link rel="shortcut icon" href="images/favicon/favicon.ico">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
@@ -44,11 +44,17 @@
     <symbol id="close" viewBox="0 0 16 16">
       <path d="M0.2,1.3c-0.3-0.3-0.3-0.8,0-1.1c0.3-0.3,0.8-0.3,1.1,0L8,6.9l6.7-6.7c0.3-0.3,0.8-0.3,1.1,0c0.3,0.3,0.3,0.8,0,1.1L9.1,8l6.7,6.7c0.3,0.3,0.3,0.8,0,1.1c-0.3,0.3-0.8,0.3-1.1,0l0,0L8,9.1l-6.7,6.7c-0.3,0.3-0.8,0.3-1.1,0c-0.3-0.3-0.3-0.8,0-1.1L6.9,8L0.2,1.3z"/>
     </symbol>
+    <symbol id="write" viewBox="0 0 20 20">
+      <path d="M1,14.1c0.2,0.1,0.3,0.1,0.5,0.2l-0.3,0.4c-0.1,0.1-0.1,0.2-0.1,0.3l-0.4,2.6c0,0.3,0.2,0.6,0.5,0.7c0.1,0,0.3,0,0.4-0.1l2.2-1.2c0.5,0.8,1.5,1.2,2.4,0.7c0.1-0.1,0.2-0.1,0.3-0.2c0.7,0.6,1.8,0.6,2.5-0.1c0.3-0.3,0.4-0.7,0.4-1.2v-0.2c1.1,0.5,2.3,0.8,3.5,0.8c1.2,0,2.5-0.3,3.6-0.8v1.4c0,0.3,0.3,0.6,0.6,0.6c0.1,0,0.2,0,0.3-0.1l2.3-1.2c0.2-0.1,0.3-0.3,0.3-0.5V9c0-0.3-0.3-0.6-0.6-0.6l0,0h-4l-4.1-2l1.6-2.2c0.2-0.3,0.1-0.6-0.1-0.8L10.7,2c-0.3-0.2-0.6-0.1-0.8,0.1c0,0,0,0,0,0l-2.1,3C7.4,4.9,6.9,4.8,6.4,5L4.2,6C3.9,6.1,3.6,6.3,3.4,6.6l-3.2,5C-0.2,12.5,0.1,13.6,1,14.1C0.9,14.1,1,14.1,1,14.1L1,14.1z M2,16.5l0.2-1.3l0.5-0.7C3,14.7,3.3,15,3.6,15.2l-0.5,0.6L2,16.5z M5.3,16.6c-0.3,0-0.6-0.3-0.6-0.6v-0.3l0.2-0.3h1V16C5.9,16.4,5.6,16.6,5.3,16.6L5.3,16.6z M7.6,16.6C7.3,16.6,7,16.4,7,16v-0.6h1.2V16C8.2,16.4,7.9,16.6,7.6,16.6L7.6,16.6z M18.8,15.7l-1.2,0.6V9.6h1.2V15.7z M15,9.5c0.1,0,0.2,0.1,0.3,0.1h1.3v4.9c-1.1,0.6-2.3,0.9-3.6,1c-1.4,0-2.7-0.4-3.8-1.1c-0.1,0-0.2-0.1-0.3-0.1H4.7c-0.6,0-1.1-0.4-1.2-1c0-0.1,0-0.2,0-0.3c0.1-0.6,0.6-1.1,1.2-1.1h3.6c1.2,0,2.4-0.5,3.2-1.3c0.2-0.2,0.2-0.6,0-0.8s-0.6-0.2-0.8,0c-0.6,0.6-1.5,1-2.4,1H8.2l2.4-3.4L15,9.5z M9.2,5.2l1,0.7l-3.4,4.9H5.3C5.3,10.8,9.2,5.2,9.2,5.2z M10.5,3.3l1,0.7l-0.7,1l-1-0.7L10.5,3.3z M1.2,12.3l3.2-5C4.5,7.2,4.6,7.1,4.7,7l2.2-1c0.1,0,0.2,0,0.3,0l-3.4,4.9c-0.7,0.3-1.3,1-1.4,1.8c-0.2,0.3-0.6,0.4-0.9,0.3C1.2,12.9,1.1,12.6,1.2,12.3L1.2,12.3z"/>
+    </symbol>
   </svg>
 
-  <header class="header">
+  <header class="header compensate-for-scrollbar">
     <div class="header__inner">
       <a class="header__logo" href="main.hrml"><img src="images/logo.svg" alt="WANNA A."></a>
+      <div class="header__feedback-block">
+        <a class="feedback-link" data-fancybox="feedback_popup" data-src="#feedback_popup" href="javascript:void(0)"><svg class="feedback-link__icon"><use xlink:href="#write"></use></svg> Напишите нам</a>
+      </div>
       <div class="header__cart-block">
         <a class="header-cart" href="cart.html">
           <span class="header-cart__text">Товаров на: 3 500 ₽</span>
@@ -71,7 +77,10 @@
           <li class="main-menu__item"><a class="main-menu__link" href="#">Контакты</a></li>
         </ul>
       </nav>
-      <p class="main-menu__side-link">Следите за нами в <a href="#" target="_blank" rel="nofollow noreferrer">INSTAGRAM</a></p>
+      <div class="main-menu__bottom">
+        <a class="button" data-fancybox="feedback_popup_2" data-src="#feedback_popup" href="javascript:void(0)">напишите нам</a>
+        <p class="main-menu__side-link">Следите за нами в <a href="#" target="_blank" rel="nofollow noreferrer">INSTAGRAM</a></p>
+      </div>
     </div>
   </header>
 
@@ -231,6 +240,10 @@
   </footer>
 
   <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/select2.full.min.js"></script>
+  <script src="js/select2-addon.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.inputmask.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
