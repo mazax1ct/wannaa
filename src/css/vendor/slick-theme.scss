@@ -4,20 +4,40 @@
 
 .slick-next,
 .slick-prev {
+  align-items: center;
   font-size: 0;
   line-height: 0;
   position: absolute;
   top: 50%;
-  display: block;
-  width: 20px;
-  height: 20px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   padding: 0;
   transform: translate(0, -50%);
   cursor: pointer;
   color: transparent;
-  border: none;
+  border: 1px solid $grey-3;
   outline: none;
   background: transparent;
+  transition: border-color 0.3s;
+  z-index: 1;
+
+  &:hover {
+    border-color: $grey-1;
+
+    .slick-arrow__icon {
+      fill: $grey-1;
+    }
+  }
+}
+
+.slick-arrow__icon {
+  fill: $grey-3;
+  height: 10px;
+  transition: fill 0.3s;
+  width: 10px;
 }
 
 .slick-next:focus,
@@ -29,24 +49,17 @@
   background: transparent;
 }
 
-.slick-next:focus:before,
-.slick-next:hover:before,
-.slick-prev:focus:before,
-.slick-prev:hover:before {
-  opacity: 1;
-}
-
-.slick-next.slick-disabled:before,
-.slick-prev.slick-disabled:before {
+.slick-next.slick-disabled,
+.slick-prev.slick-disabled {
   opacity: 0.25;
 }
 
 .slick-prev {
-  left: 0;
+  left: -50px;
 }
 
 .slick-next {
-  right: 0;
+  right: -50px;
 }
 
 .slick-dots {

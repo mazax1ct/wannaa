@@ -1,0 +1,28 @@
+.breadcrumbs
+  color: $grey-2
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+  margin-bottom: 15px
+  padding: 0
+
+  @media(min-width: 1900px)
+    margin-bottom: 50px
+
+  &__item
+    margin-bottom: 15px
+
+    &:not(:last-child)
+      &::after
+        font-size: 14px
+        content: '|'
+        margin-left: 10px
+        margin-right: 10px
+
+  &__link
+    color: $grey-1
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      text-decoration: underline

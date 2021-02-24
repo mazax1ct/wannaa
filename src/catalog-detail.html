@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Каталог - детально</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/fonts-preload.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <main class="page-content">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Wanna A.</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+        <li class="breadcrumbs__item">Черная рубашка</li>
+      </ul>
+
+      <section class="catalog-detail page-block">
+        <div class="catalog-detail__content">
+          <div class="catalog-detail__content-inner">
+            <h1 class="decorated-title">Черная рубашка</h1>
+            <picture class="catalog-detail__picture">
+              <source srcset="images/content/catalog-detail/desktop/1.jpg, images/content/catalog-detail/desktop/1@2x.jpg 2x" media="(min-width: 1024px)">
+              <img class="catalog-detail__image" src="images/content/catalog-detail/mobile/1.jpg" srcset="images/content/catalog-detail/mobile/1@2x.jpg 2x" alt="alt">
+            </picture>
+            <div class="catalog-detail__select-block">
+              <p class="catalog-detail__select-title">Выберите размер</p>
+              <div class="catalog-detail__select-row">
+                <label class="catalog-detail__select-label">
+                  <div class="select-wrapper">
+                    <select class="js-select">
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                    </select>
+                  </div>
+                </label>
+                <a class="catalog-detail__popup-opener" href="#"><svg><use xlink:href="#ruler"></use></svg> Размерная сетка</a>
+              </div>
+            </div>
+            <div class="catalog-detail__select-block">
+              <p class="catalog-detail__select-title">Принт</p>
+              <div class="catalog-detail__select-row">
+                <label class="catalog-detail__select-label">
+                  <div class="select-wrapper">
+                    <select class="js-select">
+                      <option>Стрекоза</option>
+                      <option>Звезда</option>
+                      <option>Ягода</option>
+                    </select>
+                  </div>
+                </label>
+                <a class="catalog-detail__popup-opener" href="#"><svg><use xlink:href="#image"></use></svg> Хочу свой принт</a>
+              </div>
+            </div>
+            <div class="catalog-detail__select-block">
+              <p class="catalog-detail__select-title">Твоя фраза на бирке</p>
+              <div class="catalog-detail__select-row">
+                <label class="catalog-detail__select-label">
+                  <div class="select-wrapper">
+                    <select class="js-select">
+                      <option>No one is you. And that is your power</option>
+                      <option>Black lives matter</option>
+                      <option>Make love not war</option>
+                    </select>
+                  </div>
+                </label>
+                <a class="catalog-detail__popup-opener" href="#"><svg><use xlink:href="#writing"></use></svg> Хочу свою фразу</a>
+              </div>
+            </div>
+            <div class="catalog-detail__buy-block">
+              <p class="catalog-detail__price">26 000 ₽</p>
+              <a class="button button--type_2" href="cart.html">добавить в корзину</a>
+            </div>
+            <div class="catalog-detail__popups-openers">
+              <p><a class="catalog-detail__popup-opener" href="#"><svg><use xlink:href="#ruler"></use></svg> Размерная сетка</a></p>
+              <p><a class="catalog-detail__popup-opener" href="#"><svg><use xlink:href="#image"></use></svg> Хочу свой принт</a></p>
+              <p><a class="catalog-detail__popup-opener" href="#"><svg><use xlink:href="#writing"></use></svg> Хочу свою фразу</a></p>
+            </div>
+            <div class="catalog-detail__props">
+              <div class="catalog-detail__props-block">
+                <p class="catalog-detail__props-title">Цвет</p>
+                <img width="40" height="40" src="images/content/catalog-detail/color.jpg" alt="Чёрный">
+              </div>
+              <div class="catalog-detail__props-block">
+                <p class="catalog-detail__props-title">Материал</p>
+                <p class="catalog-detail__props-value">97% хлопок, 3% эластан, производство Швейцария</p>
+              </div>
+            </div>
+            <div class="catalog-detail__description">
+              <h2>Описание</h2>
+              <p>Ткань не мнется<br> Не выстирывается цвет</p>
+              <p>Нашивка с фразой, которая формирует твое настроение вшита вовнутрь ширинки.<br> Это твой секрет.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-block">
+        <h2 class="h1 decorated-title">Образы, которые можно создать</h2>
+        <div class="js-looks-slider looks-slider">
+          <div class="looks-slider__slide">
+            <a class="looks-slider__link" href="#">
+              <picture class="looks-slider__picture">
+                <source srcset="images/content/catalog-detail/desktop/look_1.jpg, images/content/catalog-detail/desktop/look_1@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="looks-slider__image" src="images/content/catalog-detail/mobile/look_1.jpg" srcset="images/content/catalog-detail/mobile/look_1@2x.jpg 2x" alt="alt">
+              </picture>
+            </a>
+          </div>
+          <div class="looks-slider__slide">
+            <a class="looks-slider__link" href="#">
+              <picture class="looks-slider__picture">
+                <source srcset="images/content/catalog-detail/desktop/look_2.jpg, images/content/catalog-detail/desktop/look_2@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="looks-slider__image" src="images/content/catalog-detail/mobile/look_2.jpg" srcset="images/content/catalog-detail/mobile/look_2@2x.jpg 2x" alt="alt">
+              </picture>
+            </a>
+          </div>
+          <div class="looks-slider__slide">
+            <a class="looks-slider__link" href="#">
+              <picture class="looks-slider__picture">
+                <source srcset="images/content/catalog-detail/desktop/look_3.jpg, images/content/catalog-detail/desktop/look_3@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="looks-slider__image" src="images/content/catalog-detail/mobile/look_3.jpg" srcset="images/content/catalog-detail/mobile/look_3@2x.jpg 2x" alt="alt">
+              </picture>
+            </a>
+          </div>
+          <div class="looks-slider__slide">
+            <a class="looks-slider__link" href="#">
+              <picture class="looks-slider__picture">
+                <source srcset="images/content/catalog-detail/desktop/look_1.jpg, images/content/catalog-detail/desktop/look_1@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="looks-slider__image" src="images/content/catalog-detail/mobile/look_1.jpg" srcset="images/content/catalog-detail/mobile/look_1@2x.jpg 2x" alt="alt">
+              </picture>
+            </a>
+          </div>
+          <div class="looks-slider__slide">
+            <a class="looks-slider__link" href="#">
+              <picture class="looks-slider__picture">
+                <source srcset="images/content/catalog-detail/desktop/look_2.jpg, images/content/catalog-detail/desktop/look_2@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="looks-slider__image" src="images/content/catalog-detail/mobile/look_2.jpg" srcset="images/content/catalog-detail/mobile/look_2@2x.jpg 2x" alt="alt">
+              </picture>
+            </a>
+          </div>
+          <div class="looks-slider__slide">
+            <a class="looks-slider__link" href="#">
+              <picture class="looks-slider__picture">
+                <source srcset="images/content/catalog-detail/desktop/look_3.jpg, images/content/catalog-detail/desktop/look_3@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="looks-slider__image" src="images/content/catalog-detail/mobile/look_3.jpg" srcset="images/content/catalog-detail/mobile/look_3@2x.jpg 2x" alt="alt">
+              </picture>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-block">
+        <h2 class="h1 decorated-title">Упаковка</h2>
+        <div class="package">
+          <div class="package__block">
+            <img class="package__image" src="images/content/package/box_1.jpg" srcset="images/content/package/box_1@2x.jpg 2x" alt="alt" loading="lazy">
+          </div>
+          <div class="package__block">
+            <img class="package__image" src="images/content/package/box_2.png" srcset="images/content/package/box_2@2x.png 2x" alt="alt" loading="lazy">
+          </div>
+          <div class="package__block">
+            <p>Эксклюзивная упаковка онлайн-бутика Wanna A. разрабатывается в Соломео и производится в Италии, основываясь на ценностях компании.</p>
+            <p>Внутренняя упаковка, произведенная из FSC®-сертифицированных материалов, задумана для хранения и повторного использования: благодаря сборной конструкции ее можно сплющить и сложить, заняв совсем немного места.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-section page-block">
+        <h2 class="h1 decorated-title">Другая одежда</h2>
+        <ul class="catalog-list">
+          <li class="catalog-list__item">
+            <article class="catalog-item">
+              <a class="catalog-item__link" href="catalog-detail.html">
+                <picture class="catalog-item__picture">
+                  <source srcset="images/content/catalog-section/desktop/1.jpg, images/content/catalog-section/desktop/1@2x.jpg 2x" media="(min-width: 1024px)">
+                  <img class="catalog-item__image" src="images/content/catalog-section/mobile/1.jpg" srcset="images/content/catalog-section/mobile/1@2x.jpg 2x" alt="alt">
+                </picture>
+                <span class="catalog-item__title">Белая футболка</span>
+                <span class="catalog-item__price">4 900 ₽</span>
+              </a>
+            </article>
+          </li>
+          <li class="catalog-list__item">
+            <article class="catalog-item">
+              <a class="catalog-item__link" href="catalog-detail.html">
+                <picture class="catalog-item__picture">
+                  <source srcset="images/content/catalog-section/desktop/2.jpg, images/content/catalog-section/desktop/2@2x.jpg 2x" media="(min-width: 1024px)">
+                  <img class="catalog-item__image" src="images/content/catalog-section/mobile/2.jpg" srcset="images/content/catalog-section/mobile/2@2x.jpg 2x" alt="alt">
+                </picture>
+                <span class="catalog-item__title">Черная футболка</span>
+                <span class="catalog-item__price">4 900 ₽</span>
+              </a>
+            </article>
+          </li>
+          <li class="catalog-list__item">
+            <article class="catalog-item">
+              <a class="catalog-item__link" href="catalog-detail.html">
+                <picture class="catalog-item__picture">
+                  <source srcset="images/content/catalog-section/desktop/3.jpg, images/content/catalog-section/desktop/3@2x.jpg 2x" media="(min-width: 1024px)">
+                  <img class="catalog-item__image" src="images/content/catalog-section/mobile/3.jpg" srcset="images/content/catalog-section/mobile/3@2x.jpg 2x" alt="alt">
+                </picture>
+                <span class="catalog-item__title">Брюки</span>
+                <span class="catalog-item__price">23 000 ₽</span>
+              </a>
+            </article>
+          </li>
+          <li class="catalog-list__item">
+            <article class="catalog-item">
+              <a class="catalog-item__link" href="catalog-detail.html">
+                <picture class="catalog-item__picture">
+                  <source srcset="images/content/catalog-section/desktop/4.jpg, images/content/catalog-section/desktop/4@2x.jpg 2x" media="(min-width: 1024px)">
+                  <img class="catalog-item__image" src="images/content/catalog-section/mobile/4.jpg" srcset="images/content/catalog-section/mobile/4@2x.jpg 2x" alt="alt">
+                </picture>
+                <span class="catalog-item__title">Шорты</span>
+                <span class="catalog-item__price">15 000 ₽</span>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section class="subscribe page-block">
+        <div class="subscribe__text">
+          <h2 class="decorated-title">ДАВАЙТЕ ПРОДОЛЖИМ ОБЩЕНИЕ</h2>
+          <p>Узнавать новости и специальные предложения</p>
+        </div>
+        <form class="subscribe__form" action="">
+          <label class="subscribe__form-label">
+            <input class="input" type="email" value="" placeholder="Введите e-mail">
+          </label>
+          <button class="button button--type_2" type="submit">подписаться</button>
+          <p>Нажимая на кнопку «Подписаться», вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  //= template/footer.html
+
+  //= template/feedback-popup.html
+
+  //= template/scripts.html
+
+  <script src="js/slick.min.js"></script>
+  <script src="js/catalog-detail.js"></script>
+</body>
+
+</html>
