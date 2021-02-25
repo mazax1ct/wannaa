@@ -17,12 +17,15 @@ h5,.h5,
 h6,.h6
   font-weight: 500
 
-h1, .h1
+h1, .h1,
+h2, .h2
   font-size: 18px
-  line-height: 1.16666
+  line-height: 1.44444
   letter-spacing: 0.45px
   margin-bottom: 30px
+  margin-top: 0
 
+h1, .h1
   @media(min-width: 1024px)
     font-size: 27px
     margin-bottom: 50px
@@ -33,17 +36,7 @@ h1, .h1
     line-height: 1.13888
     letter-spacing: 0.9px
 
-  &.decorated-title
-    @media(min-width: 1200px)
-      padding-top: 0
-      background: none
-
 h2, .h2
-  font-size: 18px
-  line-height: 1.44444
-  letter-spacing: 0.45px
-  margin-bottom: 30px
-
   @media(min-width: 1200px)
     font-size: 30px
     line-height: 1.46666
@@ -51,24 +44,47 @@ h2, .h2
 
 .decorated-title
   background: url('../images/icons/dragonfly.svg') no-repeat 50% 0 / 22px 16px transparent
+  font-size: 18px
+  font-weight: 500
+  line-height: 1.44444
+  letter-spacing: 0.45px
+  margin-bottom: 25px
   padding-top: 55px
 
-  @media(min-width: 1200px)
+  @media(min-width: 1024px)
     background-position: 0 0
+
+  @media(min-width: 1200px)
     background-size: 35px 22px
+    font-size: 30px
+    line-height: 1.46666
+    letter-spacing: 0.75px
 
-  &.h1
-    padding-top: 25px
-    text-align: center
-    text-transform: uppercase
+.decorated-title-2
+  background: url('../images/icons/dragonfly.svg') no-repeat 50% 0 / 22px 16px transparent
+  font-size: 18px
+  font-weight: 500
+  line-height: 1.44444
+  letter-spacing: 0.45px
+  margin-bottom: 25px
+  padding-top: 25px
+  text-transform: uppercase
+  text-align: center
 
-    @media(min-width: 1200px)
-      font-weight: 300
-      text-transform: none
-      text-align: left
+  @media(min-width: 1024px)
+    background: none
+    font-size: 27px
+    font-weight: 300
+    padding-top: 0
+    text-transform: none
+    text-align: left
 
-h1,.h1,
-h2,.h2,
+  @media(min-width: 1200px)
+    font-size: 36px
+    line-height: 1.13888
+    letter-spacing: 0.9px
+    margin-bottom: 50px
+
 h3,.h3,
 h4,.h4,
 h5,.h5,

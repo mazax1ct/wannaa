@@ -29,12 +29,6 @@ $(document).on('click', '.js-popup-close', function () {
 });
 
 $(document).ready(function() {
-  //слайдер главного баннера
-  $('.js-main-banner').slick({
-    arrows: false,
-    dots: true
-  });
-
   //кастомный селект
 	$('.js-select').each(function() {
    var $p = $(this).closest('.select-wrapper');
