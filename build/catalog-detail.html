@@ -75,6 +75,15 @@
     <symbol id="slider_arrow_left" viewBox="0 0 10 10">
       <path d="M4.583 0l4.584 6.667H0z" transform="rotate(90 -21609.5 1545.5) rotate(180 -11572.708 -10032.166)"/>
     </symbol>
+    <symbol id="doc" viewBox="0 0 26 26">
+      <g>
+        <path d="M52.873 6.878a.091.091 0 0 0-.026-.052.569.569 0 0 0-.078-.13l-.026-.026L45.839.156a.545.545 0 0 0-.156-.1c-.026 0-.026 0-.052-.026a.33.33 0 0 0-.157-.03H33.907a3 3 0 0 0-3 3v20a3 3 0 0 0 3 3h15.97a3 3 0 0 0 3-3V7.034c.023-.052-.004-.104-.004-.156zm-6.852-4.95l4.846 4.559h-4.846zm5.705 21.1A1.818 1.818 0 0 1 49.9 24.88h-16a1.857 1.857 0 0 1-1.85-1.85V3.022a1.857 1.857 0 0 1 1.85-1.85h10.949V7.06a.578.578 0 0 0 .573.573h6.3z" transform="translate(-28.411) translate(-.469)"/>
+        <path d="M89.547 88.8h-5.263a.573.573 0 1 0 0 1.146h5.263a.573.573 0 0 0 0-1.146z" transform="translate(-28.411) translate(-49.83 -83.016)"/>
+        <path d="M97.336 158.4H84.284a.573.573 0 1 0 0 1.146h13.052a.573.573 0 0 0 0-1.146z" transform="translate(-28.411) translate(-49.83 -148.082)"/>
+        <path d="M97.336 216.8H84.284a.573.573 0 0 0 0 1.146h13.052a.573.573 0 0 0 0-1.146z" transform="translate(-28.411) translate(-49.83 -202.68)"/>
+        <path d="M97.336 274.8H84.284a.573.573 0 1 0 0 1.146h13.052a.573.573 0 1 0 0-1.146z" transform="translate(-28.411) translate(-49.83 -256.901)"/>
+      </g>
+    </symbol>
   </svg>
 
   <header class="header compensate-for-scrollbar">
@@ -100,7 +109,7 @@
         <ul class="main-menu__list">
           <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Каталог</a></li>
           <li class="main-menu__item"><a class="main-menu__link" href="#">Пройти тест и выбрать надпись</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="#">Философия WANNA A.</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="philosophy.html">Философия WANNA A.</a></li>
           <li class="main-menu__item"><a class="main-menu__link" href="#">Контакты</a></li>
         </ul>
       </nav>
@@ -123,10 +132,66 @@
         <div class="catalog-detail__content">
           <div class="catalog-detail__content-inner">
             <h1 class="decorated-title-2">Черная рубашка</h1>
-            <picture class="catalog-detail__picture">
-              <source srcset="images/content/catalog-detail/desktop/1.jpg, images/content/catalog-detail/desktop/1@2x.jpg 2x" media="(min-width: 1024px)">
-              <img class="catalog-detail__image" src="images/content/catalog-detail/mobile/1.jpg" srcset="images/content/catalog-detail/mobile/1@2x.jpg 2x" alt="alt">
-            </picture>
+            <div class="catalog-detail__pictures">
+              <div class="js-images-slider catalog-detail__pic-list">
+                <div class="catalog-detail__pic-list-item">
+                  <picture class="catalog-detail__picture">
+                    <source srcset="images/content/catalog-detail/desktop/1.jpg, images/content/catalog-detail/desktop/1@2x.jpg 2x" media="(min-width: 1024px)">
+                    <img class="catalog-detail__image" src="images/content/catalog-detail/mobile/1.jpg" srcset="images/content/catalog-detail/mobile/1@2x.jpg 2x" alt="alt">
+                  </picture>
+                </div>
+                <div class="catalog-detail__pic-list-item">
+                  <picture class="catalog-detail__picture">
+                    <source srcset="images/content/catalog-detail/desktop/1.jpg, images/content/catalog-detail/desktop/1@2x.jpg 2x" media="(min-width: 1024px)">
+                    <img class="catalog-detail__image" src="images/content/catalog-detail/mobile/1.jpg" srcset="images/content/catalog-detail/mobile/1@2x.jpg 2x" alt="alt">
+                  </picture>
+                </div>
+                <div class="catalog-detail__pic-list-item">
+                  <picture class="catalog-detail__picture">
+                    <source srcset="images/content/catalog-detail/desktop/1.jpg, images/content/catalog-detail/desktop/1@2x.jpg 2x" media="(min-width: 1024px)">
+                    <img class="catalog-detail__image" src="images/content/catalog-detail/mobile/1.jpg" srcset="images/content/catalog-detail/mobile/1@2x.jpg 2x" alt="alt">
+                  </picture>
+                </div>
+                <div class="catalog-detail__pic-list-item">
+                  <picture class="catalog-detail__picture">
+                    <source srcset="images/content/catalog-detail/desktop/1.jpg, images/content/catalog-detail/desktop/1@2x.jpg 2x" media="(min-width: 1024px)">
+                    <img class="catalog-detail__image" src="images/content/catalog-detail/mobile/1.jpg" srcset="images/content/catalog-detail/mobile/1@2x.jpg 2x" alt="alt">
+                  </picture>
+                </div>
+                <div class="catalog-detail__pic-list-item">
+                  <picture class="catalog-detail__picture">
+                    <source srcset="images/content/catalog-detail/desktop/1.jpg, images/content/catalog-detail/desktop/1@2x.jpg 2x" media="(min-width: 1024px)">
+                    <img class="catalog-detail__image" src="images/content/catalog-detail/mobile/1.jpg" srcset="images/content/catalog-detail/mobile/1@2x.jpg 2x" alt="alt">
+                  </picture>
+                </div>
+                <div class="catalog-detail__pic-list-item">
+                  <picture class="catalog-detail__picture">
+                    <source srcset="images/content/catalog-detail/desktop/1.jpg, images/content/catalog-detail/desktop/1@2x.jpg 2x" media="(min-width: 1024px)">
+                    <img class="catalog-detail__image" src="images/content/catalog-detail/mobile/1.jpg" srcset="images/content/catalog-detail/mobile/1@2x.jpg 2x" alt="alt">
+                  </picture>
+                </div>
+              </div>
+              <div class="js-thumbs catalog-detail__thumbs">
+                <div class="catalog-detail__thumbs-item">
+                  <img class="catalog-detail__image" src="images/content/catalog-detail/desktop/thumb.jpg" srcset="images/content/catalog-detail/desktop/thumb@2x.jpg 2x" alt="alt" loading="lazy">
+                </div>
+                <div class="catalog-detail__thumbs-item">
+                  <img class="catalog-detail__image" src="images/content/catalog-detail/desktop/thumb.jpg" srcset="images/content/catalog-detail/desktop/thumb@2x.jpg 2x" alt="alt" loading="lazy">
+                </div>
+                <div class="catalog-detail__thumbs-item">
+                  <img class="catalog-detail__image" src="images/content/catalog-detail/desktop/thumb.jpg" srcset="images/content/catalog-detail/desktop/thumb@2x.jpg 2x" alt="alt" loading="lazy">
+                </div>
+                <div class="catalog-detail__thumbs-item">
+                  <img class="catalog-detail__image" src="images/content/catalog-detail/desktop/thumb.jpg" srcset="images/content/catalog-detail/desktop/thumb@2x.jpg 2x" alt="alt" loading="lazy">
+                </div>
+                <div class="catalog-detail__thumbs-item">
+                  <img class="catalog-detail__image" src="images/content/catalog-detail/desktop/thumb.jpg" srcset="images/content/catalog-detail/desktop/thumb@2x.jpg 2x" alt="alt" loading="lazy">
+                </div>
+                <div class="catalog-detail__thumbs-item">
+                  <img class="catalog-detail__image" src="images/content/catalog-detail/desktop/thumb.jpg" srcset="images/content/catalog-detail/desktop/thumb@2x.jpg 2x" alt="alt" loading="lazy">
+                </div>
+              </div>
+            </div>
             <div class="catalog-detail__select-block">
               <p class="catalog-detail__select-title">Выберите размер</p>
               <div class="catalog-detail__select-row">
@@ -154,7 +219,7 @@
                     </select>
                   </div>
                 </label>
-                <a class="catalog-detail__popup-opener" href="#"><svg><use xlink:href="#image"></use></svg> Хочу свой принт</a>
+                <a class="catalog-detail__popup-opener" href="#"><svg><use xlink:href="#image"></use></svg> О принтах</a>
               </div>
             </div>
             <div class="catalog-detail__select-block">
@@ -169,7 +234,7 @@
                     </select>
                   </div>
                 </label>
-                <a class="catalog-detail__popup-opener" href="#"><svg><use xlink:href="#writing"></use></svg> Хочу свою фразу</a>
+                <a class="catalog-detail__popup-opener" href="#"><svg><use xlink:href="#writing"></use></svg> О фразах</a>
               </div>
             </div>
             <div class="catalog-detail__buy-block">
@@ -193,8 +258,8 @@
             </div>
             <div class="catalog-detail__description">
               <h2>Описание</h2>
-              <p>Ткань не мнется<br> Не выстирывается цвет</p>
-              <p>Нашивка с фразой, которая формирует твое настроение вшита вовнутрь ширинки.<br> Это твой секрет.</p>
+              <p><u>Параметры модели:</u> рост 180 см, грудь 88 см, талия 60 см, бедра 90 см (размер М).</p>
+              <p>Ткань не мнется. Не выстирывается цвет.<br> Нашивка с фразой, которая формирует твое настроение вшита вовнутрь ширинки.<br> Это твой секрет.</p>
             </div>
           </div>
         </div>
@@ -344,11 +409,11 @@
     <div class="footer__top container">
       <div class="footer__logo"><img src="images/logo.svg" alt="WANNA A."></div>
       <ul class="footer__nav">
-        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Философия WANNA A.</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="philosophy.html">Философия WANNA A.</a></li>
         <li class="footer__nav-item"><a class="footer__nav-link" href="#">О нас говорят</a></li>
-        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Доставка</a></li>
-        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Возврат</a></li>
-        <li class="footer__nav-item"><a class="footer__nav-link" href="#">Помощь с размером</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="delivery.html">Доставка</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="refound.html">Возврат</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="size.html">Помощь с размером</a></li>
         <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
         <li class="footer__nav-item"><a class="footer__nav-link" href="#">Публичная оферта</a></li>
         <li class="footer__nav-item"><a class="footer__nav-link" href="#">Политика конфиденциальности</a></li>

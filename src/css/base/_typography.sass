@@ -5,6 +5,10 @@ body
   line-height: 1.5
   letter-spacing: 0.4px
 
+  @media(min-width: 1900px)
+    font-size: 18px
+    line-height: 1.55555
+
 a
   color: $text-color
 
@@ -26,6 +30,8 @@ h2, .h2
   margin-top: 0
 
 h1, .h1
+  text-transform: uppercase
+
   @media(min-width: 1024px)
     font-size: 27px
     margin-bottom: 50px
@@ -35,12 +41,19 @@ h1, .h1
     font-weight: 300
     line-height: 1.13888
     letter-spacing: 0.9px
+    margin-bottom: 50px
+    text-transform: none
 
 h2, .h2
   @media(min-width: 1200px)
     font-size: 30px
     line-height: 1.46666
     letter-spacing: 0.75px
+
+h3, .h3
+  @media(min-width: 1200px)
+    font-size: 18px
+    margin-bottom: 35px
 
 .decorated-title
   background: url('../images/icons/dragonfly.svg') no-repeat 50% 0 / 22px 16px transparent
@@ -97,8 +110,15 @@ table,
   margin-top: 0
   margin-bottom: 20px
 
+  @media(min-width: 1900px)
+    margin-bottom: 25px
+
   &:last-child
     margin-bottom: 0
+
+.table-responsive
+  min-height: 0.01%
+  overflow-x: auto
 
 table
   border-collapse: collapse
@@ -117,3 +137,84 @@ img
   height: auto
   max-width: 100%
   vertical-align: top
+
+.text-left
+  text-align: left
+
+.text-right
+  text-align: right
+
+.text-center
+  text-align: center
+
+.text-align-center-mobile
+  text-align: center
+
+  @media(min-width: 1024px)
+    text-align: left
+
+.nowrap
+  white-space: nowrap
+
+blockquote
+  background: url('../images/icons/dragonfly.svg') no-repeat 50% 30px / 35px 22px transparent
+  border-top: 1px solid $grey-3
+  border-bottom: 1px solid $grey-3
+  font-size: 22px
+  line-height: 1.18181
+  letter-spacing: 0.55px
+  margin-top: 60px
+  margin-bottom: 60px
+  margin-left: 0
+  margin-right: 0
+  padding-top: 60px
+  padding-bottom: 30px
+  text-align: center
+
+  @media(min-width: 1200px)
+    background-position: 50% 50px
+    font-size: 38px
+    line-height: 1.15789
+    margin-top: 100px
+    margin-bottom: 100px
+    padding-top: 90px
+    padding-bottom: 50px
+
+hr
+  border: none
+  color: $grey-3
+  background-color: $grey-3
+  height: 1px
+  margin-top: 30px
+  margin-bottom: 30px
+
+  @media(min-width: 1200px)
+    margin-top: 50px
+    margin-bottom: 50px
+
+.download-link
+  align-items: center
+  flex-direction: column
+  display: flex
+
+  @media(min-width: 768px)
+    flex-direction: row
+
+  &__icon
+    fill: $text-color
+    height: 26px
+    margin-bottom: 15px
+    width: 26px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      margin-right: 15px
+
+.indent-60
+  margin-bottom: 60px
+
+.indent-60-100
+  margin-bottom: 60px
+
+  @media(min-width: 1200px)
+    margin-bottom: 100px

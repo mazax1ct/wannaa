@@ -1,3 +1,29 @@
+.page-with-banner
+  .breadcrumbs
+    left: 50%
+    max-width: 1570px
+    padding-left: 20px
+    padding-right: 20px
+    position: absolute
+    top: 90px
+    transform: translateX(-50%)
+    width: 100%
+    z-index: 2
+
+    @media(min-width: 1024px)
+      top: 140px
+
+    @media(min-width: 1200px)
+      width: 85%
+
+    @media(min-width: 1900px)
+      top: 175px
+      width: 100%
+
+.light-breadcrumbs
+  .breadcrumbs__link
+    color: #fff
+
 .breadcrumbs
   color: $grey-2
   display: flex
@@ -7,7 +33,7 @@
   padding: 0
 
   @media(min-width: 1900px)
-    margin-bottom: 50px
+    margin-bottom: 35px
 
   &__item
     margin-bottom: 15px
@@ -18,6 +44,8 @@
         content: '|'
         margin-left: 10px
         margin-right: 10px
+        position: relative
+        top: -2px
 
   &__link
     color: $grey-1

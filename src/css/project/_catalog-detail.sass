@@ -14,7 +14,7 @@
         content: ''
         display: block
         height: 0
-        padding-bottom: 62.092%
+        padding-bottom: 73.782%
 
   &__content-inner
     width: 100%
@@ -27,11 +27,7 @@
     @media(min-width: 1900px)
       padding-left: calc(49.01961% + 70px)
 
-  &__picture,
-  &__image
-    display: block
-
-  &__picture
+  &__pictures
     margin-bottom: 30px
 
     @media(min-width: 1024px)
@@ -41,6 +37,57 @@
       top: 0
       width: 49.01961%
       z-index: 1
+
+  &__pic-list
+    display: flex
+    margin-left: -20px
+    margin-right: -20px
+    overflow-x: auto
+    padding: 0 20px
+
+    @media(min-width: 1024px)
+      display: block
+      margin-left: 0
+      margin-right: 0
+      margin-bottom: 10px
+      overflow: visible
+      padding: 0
+
+  &__pic-list-item
+    min-width: 100%
+    padding-right: 20px
+
+    @media(min-width: 1024px)
+      min-width: 0
+      padding: 0
+
+  &__thumbs
+    display: none
+    margin-left: -5px
+    margin-right: -5px
+
+    @media(min-width: 1024px)
+      display: block
+
+    .slick-track
+      margin-left: 0
+      margin-right: 0
+
+  &__thumbs-item
+    cursor: pointer
+    padding-left: 5px
+    padding-right: 5px
+
+    &.slick-current
+      img
+        border-color: $grey-2
+
+    img
+      border: 1px solid transparent
+
+  &__picture,
+  &__image
+    display: block
 
   &__image
     width: 100%
@@ -160,7 +207,7 @@
     min-height: 40px
 
   &__description
-    @media(min-width: 1024px)
+    //@media(min-width: 1024px)
       margin-top: auto
 
     h2
