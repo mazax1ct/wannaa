@@ -53,6 +53,35 @@
       @media(min-width: 1024px)
         width: 24.99967%
 
+.news-list2
+  font-size: 16px
+  list-style: none
+  margin: 0
+  padding: 0
+
+  @media(min-width: 1024px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -10px
+    margin-right: -10px
+
+  @media(min-width: 1200px)
+    margin-left: -15px
+    margin-right: -15px
+
+  &__item
+    margin-bottom: 20px
+
+    @media(min-width: 1024px)
+      padding-left: 10px
+      padding-right: 10px
+      width: 33.33333%
+
+    @media(min-width: 1200px)
+      margin-bottom: 30px
+      padding-left: 15px
+      padding-right: 15px
+
 .news
   display: block
   text-decoration: none
@@ -81,7 +110,13 @@
     font-weight: 500
     margin-bottom: 20px
 
+    @media(min-width: 768px)
+      margin-bottom: 0
+
   &__pseudo-link
     font-size: 15px
     line-height: 20px
     text-decoration: underline
+
+    @media(min-width: 768px)
+      display: none

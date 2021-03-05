@@ -1,0 +1,146 @@
+.contacts
+  margin-bottom: 60px
+
+  @media(min-width: 768px)
+    display: flex
+    position: relative
+
+  @media(min-width: 1200px)
+    margin-bottom: 100px
+
+  &::after
+    @media(min-width: 768px)
+      background-color: $grey-3
+      content: ''
+      height: 100%
+      left: 50%
+      position: absolute
+      top: 0
+      width: 1px
+      z-index: 1
+
+  &__block
+    @media(min-width: 768px)
+      padding-left: 40px
+      padding-right: 40px
+      width: 50%
+
+    &:first-child
+      margin-bottom: 60px
+
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+  &__block-inner
+    max-width: 490px
+    margin-left: auto
+    margin-right: auto
+
+  &__title
+    font-size: 16px
+    font-weight: 400
+    margin-bottom: 30px
+    position: relative
+    padding-bottom: 15px
+    padding-top: 90px
+    text-align: center
+    text-transform: uppercase
+
+    @media(min-width: 1024px)
+      font-size: 28px
+      font-weight: 300
+      margin-bottom: 40px
+      padding-top: 100px
+      padding-bottom: 20px
+      text-transform: none
+
+    &--type_1
+      &::before
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='26' height='26' viewBox='0 0 26 26'%3E%3Cg%3E%3Cpath d='M35.211 35.485H10.24a.514.514 0 0 1-.514-.514V18.615a.514.514 0 0 1 .514-.514h24.971a.514.514 0 0 1 .514.514v16.356a.514.514 0 0 1-.514.514zm-24.457-1.029H34.7V19.129H10.754z' transform='translate(-9.373 -13.101) translate(-.351 -.7) translate(-.002)'/%3E%3Cpath d='M22.725 29.819a.514.514 0 0 1-.335-.124L9.905 19.006a.514.514 0 0 1 .669-.782l12.151 10.4 12.151-10.4a.514.514 0 1 1 .669.782L23.06 29.7a.514.514 0 0 1-.335.119z' transform='translate(-9.373 -13.101) translate(-.351 -.7) translate(-.002)'/%3E%3Cpath d='M10.514 42.661a.514.514 0 0 1-.364-.878l8.755-8.756a.514.514 0 0 1 .727.727l-8.754 8.756a.512.512 0 0 1-.364.151z' transform='translate(-9.373 -13.101) translate(-.351 -.7) translate(-.135 -7.177)'/%3E%3Cpath d='M50.257 42.671a.513.513 0 0 1-.364-.151l-8.745-8.745a.514.514 0 1 1 .727-.727l8.745 8.745a.514.514 0 0 1-.364.878z' transform='translate(-9.373 -13.101) translate(-.351 -.7) translate(-15.188 -7.186)'/%3E%3C/g%3E%3C/svg%3E%0A")
+
+    &--type_2
+      &::before
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 26 26' width='26' height='26'%3E%3Cg%3E%3Cpath d='M17.6,0.5H8.4c-1.2,0-2.2,1-2.2,2.2v20.6c0,1.2,1,2.2,2.2,2.2h9.2c1.2,0,2.2-1,2.2-2.2V2.7C19.8,1.5,18.8,0.5,17.6,0.5z M18.9,23.3c0,0.7-0.6,1.3-1.3,1.3H8.4c-0.7,0-1.3-0.6-1.3-1.3V2.7c0-0.7,0.6-1.3,1.3-1.3h9.2c0.7,0,1.3,0.6,1.3,1.3C18.9,2.7,18.9,23.3,18.9,23.3z'/%3E%3Cpath d='M11.5,3.1h3.1V4h-3.1V3.1z'/%3E%3Cpath d='M12.3,1.8h1.3v0.9h-1.3V1.8z'/%3E%3Cpath d='M13,21.1c-0.8,0-1.5,0.7-1.5,1.5c0,0.8,0.7,1.5,1.5,1.5c0.8,0,1.5-0.7,1.5-1.5C14.5,21.8,13.9,21.1,13,21.1z M13,23.3c-0.4,0-0.7-0.3-0.7-0.7c0-0.4,0.3-0.7,0.7-0.7s0.7,0.3,0.7,0.7l0,0C13.7,23,13.4,23.3,13,23.3z'/%3E%3C/g%3E%3C/svg%3E%0A")
+
+    &::before
+      background-color: $grey-4
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      border-radius: 50%
+      content: ''
+      height: 70px
+      left: 50%
+      position: absolute
+      transform: translateX(-50%)
+      top: 0
+      width: 70px
+      z-index: 1
+
+    &::after
+      background-color: $grey-3
+      content: ''
+      height: 1px
+      left: 50%
+      position: absolute
+      transform: translateX(-50%)
+      top: 100%
+      width: 30px
+      z-index: 1
+
+  &__link
+    font-size: 18px
+    text-decoration: none
+
+    @media(min-width: 1900px)
+      font-size: 24px
+      font-weight: 300
+
+    &:hover,
+    &:focus
+      text-decoration: underline
+
+  &__time
+    align-items: center
+    color: $grey-1
+    display: flex
+    flex-direction: column
+    margin-left: auto
+    margin-right: auto
+    max-width: 380px
+
+    @media(min-width: 1024px)
+      flex-direction: row
+      justify-content: space-between
+
+  &__note
+    margin-left: auto
+    margin-right: auto
+    max-width: 470px
+
+  .button
+    width: 100%
+
+.socials-links
+  align-items: center
+  display: flex
+  justify-content: center
+
+  &__link
+    align-items: center
+    display: flex
+    height: 40px
+    justify-content: center
+    margin-left: 2px
+    margin-right: 2px
+    width: 40px
+
+    &:hover,
+    &:focus
+      .socials-links__link-icon
+        fill: $text-color
+
+  &__link-icon
+    fill: $beige-1
+    height: 26px
+    transition: fill 0.3s
+    width: 26px

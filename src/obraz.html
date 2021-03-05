@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Образ</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/fonts-preload.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <main class="page-content">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Wanna A.</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Женская коллекция</a></li>
+        <li class="breadcrumbs__item">Образ "Гарсон"</li>
+      </ul>
+      <section class="page-block">
+        <h1 class="decorated-title-2 text-center">Образ "Гарсон"</h1>
+        <div class="view">
+          <div class="view__main-image">
+            <picture class="view__picture">
+              <source srcset="images/content/obraz/main/desktop/1.jpg, images/content/obraz/main/desktop/1@2x.jpg 2x" media="(min-width: 768px)">
+              <img class="view__image" src="images/content/obraz/main/mobile/1.jpg" srcset="images/content/obraz/main/mobile/1@2x.jpg 2x" alt="alt" loading="lazy">
+            </picture>
+          </div>
+          <div class="view__items-block">
+            <h2 class="decorated-title-2">Вещи из образа</h2>
+            <ul class="view-items">
+              <li class="view-items__item">
+                <a class="view-items__item-link" href="#">
+                  <picture class="view-items__item-picture">
+                    <source srcset="images/content/obraz/desktop/1.jpg, images/content/obraz/desktop/1@2x.jpg 2x" media="(min-width: 768px)">
+                    <img class="view-items__item-image" src="images/content/obraz/mobile/1.jpg" srcset="images/content/obraz/mobile/1@2x.jpg 2x" alt="alt" loading="lazy">
+                  </picture>
+                  <span class="view-items__item-title">Черная рубашка</span>
+                  <span class="view-items__item-price">26 000 ₽</span>
+                </a>
+              </li>
+              <li class="view-items__item">
+                <a class="view-items__item-link" href="#">
+                  <picture class="view-items__item-picture">
+                    <source srcset="images/content/obraz/desktop/2.jpg, images/content/obraz/desktop/2@2x.jpg 2x" media="(min-width: 768px)">
+                    <img class="view-items__item-image" src="images/content/obraz/mobile/2.jpg" srcset="images/content/obraz/mobile/2@2x.jpg 2x" alt="alt" loading="lazy">
+                  </picture>
+                  <span class="view-items__item-title">Шорты</span>
+                  <span class="view-items__item-price">15 000 ₽</span>
+                </a>
+              </li>
+              <li class="view-items__item">
+                <a class="view-items__item-link" href="#">
+                  <picture class="view-items__item-picture">
+                    <source srcset="images/content/obraz/desktop/3.jpg, images/content/obraz/desktop/3@2x.jpg 2x" media="(min-width: 768px)">
+                    <img class="view-items__item-image" src="images/content/obraz/mobile/3.jpg" srcset="images/content/obraz/mobile/3@2x.jpg 2x" alt="alt" loading="lazy">
+                  </picture>
+                  <span class="view-items__item-title">Черная рубашка</span>
+                  <span class="view-items__item-price">26 000 ₽</span>
+                </a>
+              </li>
+              <li class="view-items__item">
+                <a class="view-items__item-link" href="#">
+                  <picture class="view-items__item-picture">
+                    <source srcset="images/content/obraz/desktop/4.jpg, images/content/obraz/desktop/4@2x.jpg 2x" media="(min-width: 768px)">
+                    <img class="view-items__item-image" src="images/content/obraz/mobile/4.jpg" srcset="images/content/obraz/mobile/4@2x.jpg 2x" alt="alt" loading="lazy">
+                  </picture>
+                  <span class="view-items__item-title">Аксессуары</span>
+                  <span class="view-items__item-price">3 000 ₽</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe page-block">
+        <div class="subscribe__text">
+          <h2 class="decorated-title">ДАВАЙТЕ ПРОДОЛЖИМ ОБЩЕНИЕ</h2>
+          <p>Узнавать новости и специальные предложения</p>
+        </div>
+        <form class="subscribe__form" action="">
+          <label class="subscribe__form-label">
+            <input class="input" type="email" value="" placeholder="Введите e-mail">
+          </label>
+          <button class="button button--type_2" type="submit">подписаться</button>
+          <p>Нажимая на кнопку «Подписаться», вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  //= template/footer.html
+
+  //= template/feedback-popup.html
+
+  //= template/scripts.html
+</body>
+
+</html>

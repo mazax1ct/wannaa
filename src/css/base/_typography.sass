@@ -98,6 +98,10 @@ h3, .h3
     letter-spacing: 0.9px
     margin-bottom: 50px
 
+  &.text-center
+    @media(min-width: 1024px)
+      text-align: center
+
 h3,.h3,
 h4,.h4,
 h5,.h5,
@@ -106,7 +110,8 @@ p,
 ul,
 ol,
 table,
-.table-responsive
+.table-responsive,
+.responsive-table
   margin-top: 0
   margin-bottom: 20px
 
@@ -116,22 +121,40 @@ table,
   &:last-child
     margin-bottom: 0
 
-.table-responsive
+.table-responsive,
+.responsive-table
   min-height: 0.01%
   overflow-x: auto
 
 table
   border-collapse: collapse
+  color: $grey-1
+  font-size: 14px
   max-width: 100%
-  text-align: left
+  text-align: center
   width: 100%
+
+  th
+    color: $grey-2
+    font-weight: 400
+    padding-top: 15px
+    padding-bottom: 15px
 
   th,
   td
     border: none
-    border-bottom: 1px solid
-    padding: 10px
+    padding: 20px
     vertical-align: top
+
+  tr
+    &:not(:last-child)
+      th,
+      td
+        border-bottom: 1px solid $grey-3
+
+    &:last-child
+      td
+        padding-bottom: 0
 
 img
   height: auto
@@ -209,6 +232,12 @@ hr
     @media(min-width: 768px)
       margin-bottom: 0
       margin-right: 15px
+
+.indent-30-50
+  margin-bottom: 30px
+
+  @media(min-width: 1200px)
+    margin-bottom: 50px
 
 .indent-60
   margin-bottom: 60px
