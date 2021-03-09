@@ -49,3 +49,10 @@ $(document).ready(function() {
   //маска ввода телефона
   $(".js-phone-mask").inputmask("+7 (999) 999 - 99 - 99",{"clearIncomplete": true, showMaskOnHover: false});
 });
+
+//открытие/закрытие аккордеона
+$(document).on('click', '.js-accordion-toggler', function() {
+  $(this).toggleClass('is-open');
+  $(this).next('.accordion__dropdown').slideToggle();
+  return false;
+});

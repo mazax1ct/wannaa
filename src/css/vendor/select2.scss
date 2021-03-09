@@ -225,15 +225,15 @@
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   display: block;
   font-size: 16px;
-  height: 50px;
+  height: 48px;
   line-height: 19px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   @media(min-width: 1024px) {
     font-size: 18px;
-    height: 60px;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    height: 58px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 

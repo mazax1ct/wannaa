@@ -1,0 +1,42 @@
+.accordion
+  &:not(:last-child)
+    border-bottom: 1px solid $grey-3
+
+  &__title
+    cursor: pointer
+    margin-bottom: 0
+    padding-bottom: 20px
+    padding-top: 20px
+    position: relative
+
+    @media(min-width: 1200px)
+      font-size: 20px
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath fill='%239a9c9f' d='M4.583 0l4.584 6.667H0z' transform='translate(23155 20074) rotate(180 -11572.708 -10032.833)'/%3E%3C/svg%3E");
+      background-position: 0 0
+      background-repeat: no-repeat
+      content: ''
+      display: block
+      height: 10px
+      left: auto
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 10px
+      z-index: 1
+
+    &.is-open
+      @media(min-width: 1200px)
+        font-weight: 500
+
+      &::after
+        transform: translateY(-50%) rotate(180deg)
+
+  &__dropdown
+    display: none
+    padding-bottom: 20px
+
+    @media(min-width: 1200px)
+      padding-bottom: 30px

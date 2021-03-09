@@ -167,4 +167,35 @@
       display: block
 
 .figure-3
+  margin-top: 30px
+  margin-bottom: 30px
+
+  @media(min-width: 768px)
+    display: flex
+    margin-left: -10px
+    margin-right: -10px
+
+  @media(min-width: 1200px)
+    margin-left: -15px
+    margin-right: -15px
+
   &__block
+    @media(min-width: 768px)
+      padding-left: 10px
+      padding-right: 10px
+      width: 50%
+
+    @media(min-width: 1200px)
+      padding-left: 15px
+      padding-right: 15px
+
+    &:first-child
+      display: none
+
+      @media(min-width: 768px)
+        display: block
+
+  &__picture,
+  &__image
+    display: block
+    width: 100%
