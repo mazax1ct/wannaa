@@ -6,19 +6,11 @@ $(document).ready(function() {
   });
 });
 
-var target = $('.elem');
-var targetPos = target.offset().top;
-var targetHeight = target.height();
-var winHeight = $(window).height();
-var scrollToElem = targetPos - winHeight;
-
-
-
+//запуск видео по скроллу
 var $video = $('video');
 var $window = $(window);
 
 $window.scroll(function() {
-
   var $topOfVideo = $video.offset().top;
   var $bottomOfVideo = $video.offset().top + $video.outerHeight();
 
