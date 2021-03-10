@@ -173,12 +173,12 @@
         <div class="video-block__content">
           <div class="video-block__content-inner">
             <h1 class="decorated-title">ОТКРОЙСЯ МИРУ,<br> НЕ УПУСКАЯ СЛУЧАЯ ЕМУ УЛЫБНУТЬСЯ.<br> ФЛИРТУЙ С НИМ!</h1>
-            <a class="video-block__video" href="#">
-              <picture class="video-block__picture">
-                <source srcset="images/content/video-block/desktop/photo_video.jpg, images/content/video-block/desktop/photo_video@2x.jpg 2x" media="(min-width: 768px)">
-                <img class="video-block__image" src="images/content/video-block/mobile/photo_video.jpg" srcset="images/content/video-block/mobile/photo_video@2x.jpg 2x" alt="alt" loading="lazy">
-              </picture>
-            </a>
+            <div class="video-block__video-block">
+              <video class="elem video-block__video" preload="auto" loop="loop" muted poster="images/content/video-block/desktop/photo_video@2x.jpg">
+               <source src="images/wanna.mp4">
+              </video>
+              <button class="video-block__video-play" type="button" title="Включить видео"></button>
+            </div>
             <p>Играй, смейся, провоцируй, флиртуй!</p>
           </div>
         </div>
