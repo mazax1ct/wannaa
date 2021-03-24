@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Принт-картинки</title>
+  <title>Оформление заказа</title>
 
   <meta name="description" content="">
 
@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 
-<body>
+<body class="checkout">
   <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
     <symbol id="cart" viewBox="0 0 20 20">
       <path stroke-width="0.3px" d="M63.1 15.452L62.08 3.926a.493.493 0 0 0-.49-.45h-2.105a3.532 3.532 0 0 0-7.062 0h-2.106a.49.49 0 0 0-.49.45L48.8 15.452v.044a2.547 2.547 0 0 0 2.683 2.38h8.941a2.547 2.547 0 0 0 2.683-2.38.178.178 0 0 0-.007-.044zM55.954.987A2.547 2.547 0 0 1 58.5 3.476h-5.09A2.547 2.547 0 0 1 55.954.987zm4.471 15.9h-8.942a1.575 1.575 0 0 1-1.7-1.371l.98-11.05h1.652v1.5a.493.493 0 0 0 .987 0v-1.5H58.5v1.5a.493.493 0 0 0 .987 0v-1.5h1.652l.983 11.05a1.577 1.577 0 0 1-1.698 1.372z" transform="translate(-46.6) translate(.412 .612)"/>
@@ -140,101 +140,10 @@
 
   <main class="page-content">
     <div class="container">
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Wanna A.</a></li>
-        <li class="breadcrumbs__item">Принт-картинки</li>
-      </ul>
-
-      <section class="page-block">
-        <div class="text-block">
-          <h1 class="text-center">Принт-картинки</h1>
-
-          <p>Как много смысла может быть в одной картинке. Выбирай свой принт на одежде и свою интерпретацию счастья.<br> Пускай другие расшифровывают и восхищаются.</p>
-
-          <div class="chooser">
-            <div class="chooser__image-block">
-              <img class="chooser__image" src="images/content/chooser/2.jpg" srcset="images/content/chooser/2@2x.jpg 2x" alt="Принт Стрекоза">
-            </div>
-            <div class="chooser__form">
-              <h3>Принт "Стрекоза"</h3>
-              <p>Когда двоим хорошо вместе, что по-настоящему имеет значение? Откровение. Да, это про смелый секс, да это про мысли, которые читаются в глазах без переводчика. Это про раскатистый пороховой огонь, возникающий от одной искры между двумя. Это про мурашки от заведомого оргазма, потому что вы не боитесь афишировать свою страсть.</p>
-              <label class="label">
-                <span class="label__text">Изделие, которую вы хотите с этим принтом</span>
-                <div class="select-wrapper">
-                  <select class="js-select">
-                    <option data-src="images/content/chooser/2.jpg" data-srcset="images/content/chooser/2@2x.jpg 2x">Черная рубашка</option>
-                    <option data-src="images/content/chooser/3.jpg" data-srcset="images/content/chooser/3@2x.jpg 2x">Черная футболка</option>
-                    <option data-src="images/content/chooser/4.jpg" data-srcset="images/content/chooser/4@2x.jpg 2x">Белая футболка</option>
-                    <option data-src="images/content/chooser/2.jpg" data-srcset="images/content/chooser/2@2x.jpg 2x">Брюки</option>
-                    <option data-src="images/content/chooser/3.jpg" data-srcset="images/content/chooser/3@2x.jpg 2x">Шорты</option>
-                  </select>
-                </div>
-              </label>
-              <a class="button button--type_2" href="#">купить</a>
-            </div>
-          </div>
-
-          <div class="chooser chooser--reverse">
-            <div class="chooser__image-block">
-              <img class="chooser__image" src="images/content/chooser/4.jpg" srcset="images/content/chooser/4@2x.jpg 2x" alt="Баннер">
-            </div>
-            <div class="chooser__form">
-              <h3>Принт "Банан"</h3>
-              <p>Считается, что бабочек привлекает цветочный нектар, но мы имеем дело с необычными порхающими красотками. Их искушает нечто продолговатой формы, с крепким основанием и сладким вкусом. Нет ничего удивительного в их тяге, ведь многие любят полакомиться этим сочным фруктом:)</p>
-              <label class="label">
-                <span class="label__text">Изделие, которую вы хотите с этим принтом</span>
-                <div class="select-wrapper">
-                  <select class="js-select">
-                    <option data-src="images/content/chooser/2.jpg" data-srcset="images/content/chooser/2@2x.jpg 2x">Черная рубашка</option>
-                    <option data-src="images/content/chooser/3.jpg" data-srcset="images/content/chooser/3@2x.jpg 2x">Черная футболка</option>
-                    <option data-src="images/content/chooser/4.jpg" data-srcset="images/content/chooser/4@2x.jpg 2x">Белая футболка</option>
-                    <option data-src="images/content/chooser/2.jpg" data-srcset="images/content/chooser/2@2x.jpg 2x">Брюки</option>
-                    <option data-src="images/content/chooser/3.jpg" data-srcset="images/content/chooser/3@2x.jpg 2x">Шорты</option>
-                  </select>
-                </div>
-              </label>
-              <a class="button button--type_2" href="#">купить</a>
-            </div>
-          </div>
-
-          <div class="chooser">
-            <div class="chooser__image-block">
-              <img class="chooser__image" src="images/content/chooser/3.jpg" srcset="images/content/chooser/3@2x.jpg 2x" alt="Баннер">
-            </div>
-            <div class="chooser__form">
-              <h3>Принт "Лягушка"</h3>
-              <p>В 21 веке Царевна-лягушка уже не жаждет поцелуя от Ивана Царевича. Она обожает себя и не скрывает этого. Так, например, она щеголяет на шпильках и демонстрирует миру бриллиант, вес которого насчитывает более десяти карат. Настоящая дива!</p>
-              <label class="label">
-                <span class="label__text">Изделие, которую вы хотите с этим принтом</span>
-                <div class="select-wrapper">
-                  <select class="js-select">
-                    <option data-src="images/content/chooser/2.jpg" data-srcset="images/content/chooser/2@2x.jpg 2x">Черная рубашка</option>
-                    <option data-src="images/content/chooser/3.jpg" data-srcset="images/content/chooser/3@2x.jpg 2x">Черная футболка</option>
-                    <option data-src="images/content/chooser/4.jpg" data-srcset="images/content/chooser/4@2x.jpg 2x">Белая футболка</option>
-                    <option data-src="images/content/chooser/2.jpg" data-srcset="images/content/chooser/2@2x.jpg 2x">Брюки</option>
-                    <option data-src="images/content/chooser/3.jpg" data-srcset="images/content/chooser/3@2x.jpg 2x">Шорты</option>
-                  </select>
-                </div>
-              </label>
-              <a class="button button--type_2" href="#">купить</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="subscribe page-block">
-        <div class="subscribe__text">
-          <h2 class="decorated-title">ДАВАЙ ПРОДОЛЖИМ ОБЩЕНИЕ</h2>
-          <p>Узнавать новости и специальные предложения</p>
-        </div>
-        <form class="subscribe__form" action="">
-          <label class="subscribe__form-label">
-            <input class="input error" type="email" value="" placeholder="Введите e-mail">
-          </label>
-          <button class="button button--type_2" type="submit">подписаться</button>
-          <p>Нажимая на кнопку «Подписаться», вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
-        </form>
-      </section>
+      <div class="checkout-finish">
+        <h1>Ваш заказ №358494 принят.</h1>
+        <p>В ближайшее время наши менеджеры свяжутся с вами для уточнения деталей.</p>
+      </div>
     </div>
   </main>
 
@@ -293,7 +202,6 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.inputmask.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/chooser.js"></script>
 </body>
 
 </html>
