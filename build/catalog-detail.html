@@ -210,6 +210,11 @@
                 </div>
               </div>
             </div>
+            <p class="catalog-detail__price catalog-detail__price--mobile">26 000 ₽</p>
+            <div class="catalog-detail__props-block catalog-detail__props-block--color">
+              <p class="catalog-detail__props-title">Цвет</p>
+              <img width="40" height="40" src="images/content/catalog-detail/color.jpg" alt="Чёрный">
+            </div>
             <div class="catalog-detail__select-block">
               <p class="catalog-detail__select-title">Выберите размер</p>
               <div class="catalog-detail__select-row">
@@ -257,7 +262,7 @@
             </div>
             <div class="catalog-detail__buy-block">
               <p class="catalog-detail__price">26 000 ₽</p>
-              <a class="button button--type_2" href="cart.html">добавить в корзину</a>
+              <a class="button button--type_2" href="checkout.html">добавить в корзину</a>
             </div>
             <div class="catalog-detail__popups-openers">
               <p><a class="catalog-detail__popup-opener" href="javascript:void(0)" data-fancybox="sizes_table_2" data-src="#sizes_table"><svg><use xlink:href="#ruler"></use></svg> Размерная сетка</a></p>
@@ -265,7 +270,7 @@
               <p><a class="catalog-detail__popup-opener" href="#"><svg><use xlink:href="#writing"></use></svg> Хочу свою фразу</a></p>
             </div>
             <div class="catalog-detail__props">
-              <div class="catalog-detail__props-block">
+              <div class="catalog-detail__props-block catalog-detail__props-block--color">
                 <p class="catalog-detail__props-title">Цвет</p>
                 <img width="40" height="40" src="images/content/catalog-detail/color.jpg" alt="Чёрный">
               </div>
@@ -517,9 +522,15 @@
       <label>
         <textarea class="textarea" placeholder="Напишите свое сообщение здесь"></textarea>
       </label>
-      <button class="button button--type_2" type="submit">отправить заявку</button>
+      <button class="button button--type_2" type="submit" data-fancybox="feedback_popup_result" data-src="#feedback_popup_result">отправить заявку</button>
     </form>
     <p>Нажимая на кнопку «Отправить заявку», вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+  </div>
+  
+  <div id="feedback_popup_result" class="popup">
+    <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon"><use xlink:href="#close"></use></svg></button>
+    <p class="popup__title">ВАША ЗАЯВКА ОТПРАВЛЕНА</p>
+    <p class="popup__text">Мы свяжемся с вами в ближайшее время.</p>
   </div>
 
   <script src="js/jquery-3.5.1.min.js"></script>

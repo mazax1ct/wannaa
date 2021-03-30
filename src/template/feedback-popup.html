@@ -25,7 +25,13 @@
     <label>
       <textarea class="textarea" placeholder="Напишите свое сообщение здесь"></textarea>
     </label>
-    <button class="button button--type_2" type="submit">отправить заявку</button>
+    <button class="button button--type_2" type="submit" data-fancybox="feedback_popup_result" data-src="#feedback_popup_result">отправить заявку</button>
   </form>
   <p>Нажимая на кнопку «Отправить заявку», вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+</div>
+
+<div id="feedback_popup_result" class="popup">
+  <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon"><use xlink:href="#close"></use></svg></button>
+  <p class="popup__title">ВАША ЗАЯВКА ОТПРАВЛЕНА</p>
+  <p class="popup__text">Мы свяжемся с вами в ближайшее время.</p>
 </div>

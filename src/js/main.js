@@ -7,6 +7,7 @@ $.fancybox.defaults.smallBtn = false;
 $.fancybox.defaults.i18n.en.CLOSE = "Закрыть";
 $.fancybox.defaults.i18n.en.NEXT = "Вперёд";
 $.fancybox.defaults.i18n.en.PREV = "Назад";
+$.fancybox.defaults.closeExisting = true;
 
 //открытие основного меню
 $(document).on('click', '.js-menu-opener', function() {

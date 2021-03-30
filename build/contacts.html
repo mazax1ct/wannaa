@@ -169,10 +169,7 @@
           </div>
           <div class="contacts__block">
             <div class="contacts__block-inner">
-              <h2 class="contacts__title contacts__title--type_2">Звони нам</h2>
-              <p class="indent-30-50 text-center"><a class="contacts__link" href="tel:+79111257573">+7 911 125 75 73</a></p>
-              <!--<p class="contacts__time"><span>пн-пт 09:00 — 21:00</span> <span>cб-вс 09:00 — 19:00</span></p>-->
-              <p class="contacts__note text-center indent-30-50">Тебе нужна служба поддержки? Наша команда готова ответить на вопросы о работе и товарах интернет-магазина Wanna A.</p>
+              <h2 class="contacts__title contacts__title--type_2">Связаться по<br> WhatsApp, Telegram, Viber</h2>
               <p class="socials-links">
                 <a class="socials-links__link" href="#" rel="nofollow noreferrer" target="_blank" title="Telegram">
                   <svg class="socials-links__link-icon"><use xlink:href="#telegram"></use></svg>
@@ -184,6 +181,9 @@
                   <svg class="socials-links__link-icon"><use xlink:href="#viber"></use></svg>
                 </a>
               </p>
+              <p class="indent-30-50 text-center"><a class="contacts__link" href="tel:+79111257573">+7 911 125 75 73</a></p>
+              <!--<p class="contacts__time"><span>пн-пт 09:00 — 21:00</span> <span>cб-вс 09:00 — 19:00</span></p>-->
+              <p class="contacts__note text-center indent-30-50">Тебе нужна служба поддержки? Наша команда готова ответить на вопросы о работе и товарах интернет-магазина Wanna A.</p>
             </div>
           </div>
         </div>
@@ -278,9 +278,15 @@
       <label>
         <textarea class="textarea" placeholder="Напишите свое сообщение здесь"></textarea>
       </label>
-      <button class="button button--type_2" type="submit">отправить заявку</button>
+      <button class="button button--type_2" type="submit" data-fancybox="feedback_popup_result" data-src="#feedback_popup_result">отправить заявку</button>
     </form>
     <p>Нажимая на кнопку «Отправить заявку», вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+  </div>
+  
+  <div id="feedback_popup_result" class="popup">
+    <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon"><use xlink:href="#close"></use></svg></button>
+    <p class="popup__title">ВАША ЗАЯВКА ОТПРАВЛЕНА</p>
+    <p class="popup__text">Мы свяжемся с вами в ближайшее время.</p>
   </div>
 
   <script src="js/jquery-3.5.1.min.js"></script>

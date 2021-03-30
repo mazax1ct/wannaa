@@ -163,11 +163,19 @@
       margin-bottom: 80px
 
   &__price
+    display: none
     font-size: 26px
 
     @media(min-width: 768px)
+      display: block
       margin-bottom: 0
       margin-right: 55px
+
+    &--mobile
+      display: block
+
+      @media(min-width: 768px)
+        display: none
 
   &__popups-openers
     margin-bottom: 50px
@@ -185,6 +193,12 @@
     @media(min-width: 1024px)
       order: -1
 
+    .catalog-detail__props-block--color
+      display: none
+      
+      @media(min-width: 768px)
+        display: block
+
   &__props-block
     &:not(:last-child)
       margin-bottom: 30px
@@ -195,6 +209,10 @@
     &:first-child
       @media(min-width: 768px)
         margin-right: 120px
+
+    &--color
+      @media(min-width: 768px)
+        display: none
 
   &__props-title
     color: $grey-1
