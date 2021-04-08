@@ -1,32 +1,32 @@
 var arr = [];
 var controlObj = {};
 var count, max = 0;
-var output = '';
+var outputClass = '';
 var questionsCount = '';
 var currentQuestion = '1';
 
-function count() {
-  controlObj = {};
-  count, max = 0;
+function count(array) {
+  var names = {};
+  array.forEach(item => {
+    names[item] = (names[item] || 0) + 1;
+  });
 
-  for (var i = 0; i < arr.length; i++) {
-    // если этот элемент объекта не создавался ранее
-    if(controlObj[arr[i]] != true) {
-      for (var j = i; j < arr.length; j++) {
-        if(arr[i] == arr[j]) {
-          count++;
-        }
-      }
+  var maxValue = 0;
+  var keyVal;
 
-      if (count > max) {
-        max = count;
-        output = arr[i];
-      }
-      count = 0;
+  for (var key in names) {
+    var tempValue = names[key];
+    if(maxValue < tempValue) {
+      maxValue = tempValue;
+      keyVal = key;
     }
-    // сохраним этот элемент объекта, чтобы в будущем его не считать снова
-    controlObj[arr[i]] = true;
   }
+
+  //console.log(keyVal);
+
+  outputClass = keyVal;
+
+  return outputClass;
 }
 
 $(document).ready(function() {
@@ -42,7 +42,7 @@ $(document).on('change', '.quiz-section input', function () {
 $(document).on('click', '.js-next', function () {
   var currentSlide = $('.quiz-section.is-active'); //текущий вопрос
   currentSlide.removeClass('visible');
-  
+
   arr = []; //обнуляем массив с выбранными ответами
 
   $('.quiz-section input:checked').each(function(indx, element) { //пихаем в массив все выбранные ответы
@@ -54,8 +54,9 @@ $(document).on('click', '.js-next', function () {
     $('.js-prev').hide(); //скрываем кнопки
     $('.js-next').hide(); //скрываем кнопки
     $('.js-restart').show(); //скрываем кнопки
-    count(); //считаем наибольшее количество одинаковых ответов
-    $('.' + output).addClass('is-active');
+    count(arr); //считаем наибольшее количество одинаковых ответов
+
+    $('.' + outputClass).addClass('is-active');
     $('.quiz-section.is-active').removeClass('is-active');
     $('.quiz__result').addClass('is-active'); //отображаем блок с результатом
     setTimeout(function() {
@@ -81,6 +82,8 @@ $(document).on('click', '.js-next', function () {
   currentQuestion = currentSlide.next('.quiz-section').index() + 1;
 
   $('#currentQuestion').text(currentQuestion);
+
+  //console.log(arr);
 });
 
 $(document).on('click', '.js-prev', function () {
@@ -105,7 +108,7 @@ $(document).on('click', '.js-prev', function () {
 });
 
 $(document).on('click', '.js-restart', function () {
-  arr = [];
+  /*arr = [];
   controlObj = {};
   count, max = 0;
   output = '';
@@ -128,5 +131,9 @@ $(document).on('click', '.js-restart', function () {
   $('.js-prev').prop('disabled', 'disabled');
   $('.js-prev').show();
   $('.js-next').show();
-  $('.js-restart').hide();
+  $('.js-restart').hide();*/
+
+  $('.js-next').prop('disabled', 'disabled');
+  $('.js-prev').prop('disabled', 'disabled');
+  window.location.reload();
 });
