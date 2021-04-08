@@ -23,67 +23,54 @@
     clip: rect(0 0 0 0)
     width: 1px
 
-.checkbox-icon,
-.radio-icon
-  border: 1px solid #cecece
-  cursor: pointer
-  height: 22px
-  left: 0
-  line-height: 20px
-  position: absolute
-  top: 0
-  text-align: center
-  width: 22px
+  &__icon
+    position: absolute
+    z-index: 1
+    top: 4px
+    left: 0
+    width: 16px
+    height: 16px
+    border: 1px solid $grey-2
 
-.checkbox-icon
-  border-radius: 5px
+.radio-label
+  &__icon
+    border-radius: 50%
 
-.radio-icon
-  border-radius: 50%
+input[type="checkbox"]:checked + .checkbox-label__icon::before
+  color: $text-color
+  content: '✓'
   font-size: 12px
-  top: -1px
+  font-weight: 500
+  text-align: center
+  height: 16px
+  left: 50%
+  position: absolute
+  top: 50%
+  transform: translate(-50%, -50%)
+  width: 16px
 
-input[type="checkbox"]:checked + .checkbox-icon:before
-  background-color: #000
+input[type="radio"]:checked + .radio-label__icon::before
+  background-color: $grey-2
   border-radius: 3px
-  content: ""
-  height: 14px
+  content: ''
+  height: 6px
   left: 50%
   position: absolute
   top: 50%
   transform: translate(-50%, -50%)
-  width: 14px
+  width: 6px
 
-input[type="checkbox"]:focus + .checkbox-icon,
-input[type="checkbox"]:active + .checkbox-icon
-  box-shadow: 0 0 0 2px #00d123
-
-input[type="radio"]:checked + .radio-icon:before
-  background-color: #000
-  border-radius: 50%
-  content: ""
-  height: 14px
-  left: 50%
-  position: absolute
-  top: 50%
-  transform: translate(-50%, -50%)
-  width: 14px
-
-input[type="radio"]:focus + .radio-icon,
-input[type="radio"]:active + .radio-icon
-  box-shadow: 0 0 0 2px #00d123
-
-.checkbox-text,
-.radio-text
+.checkbox-label__text,
+.radio-label__text
   cursor: pointer
 
-input[type="checkbox"]:disabled ~ .checkbox-text,
-input[type="checkbox"].disabled ~ .checkbox-text,
-input[type="checkbox"]:disabled ~ .checkbox-icon,
-input[type="checkbox"].disabled ~ .checkbox-icon,
-input[type="radio"]:disabled ~ .radio-text,
-input[type="radio"].disabled ~ .radio-text,
-input[type="radio"]:disabled ~ .radio-icon,
-input[type="radio"].disabled ~ .radio-icon
+input[type="checkbox"]:disabled ~ .checkbox-label__text,
+input[type="checkbox"].disabled ~ .checkbox-label__text,
+input[type="checkbox"]:disabled ~ .checkbox-label__icon,
+input[type="checkbox"].disabled ~ .checkbox-label__icon,
+input[type="radio"]:disabled ~ .radio-label__text,
+input[type="radio"].disabled ~ .radio-label__text,
+input[type="radio"]:disabled ~ .radio-label__icon,
+input[type="radio"].disabled ~ .radio-label__icon
   cursor: default
   opacity: 0.5

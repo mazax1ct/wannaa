@@ -1,0 +1,63 @@
+.quiz
+  margin-left: auto
+  margin-right: auto
+  max-width: 800px
+
+  &__counter
+    text-align: center
+
+  &__buttons
+    align-items: center
+    display: flex
+    justify-content: space-between
+
+    .button
+      min-width: 120px
+
+      &.js-restart
+        display: none
+        margin-left: auto
+        margin-right: auto
+
+  &__result
+    border: 1px solid $grey-3
+    display: none
+    margin-bottom: 40px
+    opacity: 0
+    padding: 20px
+    transition: opacity 0.3s
+
+    @media(min-width: 768px)
+      padding: 40px
+
+    &.visible
+      opacity: 1
+
+    &.is-active
+      display: block
+
+  &__result-phrase
+    display: none
+
+    &.is-active
+      display: block
+
+.quiz-section
+  border: 1px solid $grey-3
+  display: none
+  margin-bottom: 40px
+  opacity: 0
+  padding: 20px
+  transition: opacity 0.3s
+
+  @media(min-width: 768px)
+    padding: 40px
+
+  &.visible
+    opacity: 1
+
+  &.is-active
+    display: block
+
+  &__title
+    font-weight: 500

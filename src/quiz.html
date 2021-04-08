@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Тест</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/fonts-preload.html
+
+  //= template/style.html
+</head>
+
+<body class="page-with-banner light-breadcrumbs">
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <main class="page-content">
+    <div class="page-banner">
+      <picture class="page-banner__picture">
+        <source srcset="images/content/page-banners/philosophy/desktop/banner.jpg, images/content/page-banners/philosophy/desktop/banner@2x.jpg 2x" media="(min-width: 768px)">
+        <img class="page-banner__image" src="images/content/page-banners/philosophy/mobile/banner.jpg" srcset="images/content/page-banners/philosophy/mobile/banner@2x.jpg 2x" alt="Баннер">
+      </picture>
+    </div>
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Wanna A.</a></li>
+        <li class="breadcrumbs__item">Тест</li>
+      </ul>
+
+      <section class="page-block">
+        <h1 class="text-center">КАКАЯ ФОРМУЛА ТЕБЯ ОПРЕДЕЛЯЕТ</h1>
+        <div class="quiz">
+          <p class="quiz__counter">Вопрос: <span id="currentQuestion">1</span> из <span id="questionsCount">15</span></p>
+          <form action="">
+            <div>
+              <div class="quiz-section is-active visible">
+                <p class="quiz-section__title">1. О чем ты мечтаешь?</p>
+                <label class="radio-label">
+                  <input type="radio" name="q_1" value="SI" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">мир во всем мире (SI)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_1" value="SA" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">успех, карьера, самореализация (SA)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_1" value="EJ" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">больше путешествовать (EJ)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_1" value="NR" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">мир без границ, условностей и правил (NR)</span>
+                </label>
+              </div>
+              <div class="quiz-section">
+                <p class="quiz-section__title">2. Что ты любила делать в детстве?</p>
+                <label class="radio-label">
+                  <input type="radio" name="q_2" value="P" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">мастерить что-то, рисовать, клеить, лепить (P)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_2" value="RM" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">играть в активные игры (RM)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_2" value="EY" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">да что угодно, главное разное и интересное (EY)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_2" value="AP" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">выступать с концертами, быть в центре внимания (AP)</span>
+                </label>
+              </div>
+              <div class="quiz-section">
+                <p class="quiz-section__title">3. Лучшее место для жизни – какое оно?</p>
+                <label class="radio-label">
+                  <input type="radio" name="q_3" value="P" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">уютный дом в горах или на берегу озера (P)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_3" value="SA" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">шикарная квартира в центре мегаполиса (SA)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_3" value="SI" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">милая хижина на берегу океана (SI)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_3" value="TV" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">любое место, где я буду счастлива (TV)</span>
+                </label>
+              </div>
+              <div class="quiz-section">
+                <p class="quiz-section__title">4. Пиво или водка?</p>
+                <label class="radio-label">
+                  <input type="radio" name="q_4" value="NR" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">пиво! (NR)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_4" value="RM" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">водка! (RM)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_4" value="Y" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">это не тот тест! Вы вопросы перепутали! (Y)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_4" value="TV" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">шампанское, только шампанское! (TV)</span>
+                </label>
+              </div>
+              <div class="quiz-section">
+                <p class="quiz-section__title">5. Как ты реагируешь на критику?</p>
+                <label class="radio-label">
+                  <input type="radio" name="q_5" value="EY" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">обижаюсь (EY)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_5" value="P" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">расстраиваюсь (P)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_5" value="RM" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">защищаюсь, а потом нападаю (RM)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_5" value="SI" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">благодарю и анализирую. Ноэтонеточно. (SI)</span>
+                </label>
+              </div>
+              <div class="quiz-section">
+                <p class="quiz-section__title">6. Если бы ты была животным, то каким?</p>
+                <label class="radio-label">
+                  <input type="radio" name="q_6" value="AP" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">львицей конечно! (AP)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_6" value="EJ" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">перелетной птицей (EJ)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_6" value="EY" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">милым медвежонком (EY)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_6" value="TV" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">кошкой, которая гуляет сама по себе (TV)</span>
+                </label>
+              </div>
+              <div class="quiz-section">
+                <p class="quiz-section__title">7. Какое качество обязательно должно быть у твоего мужчины?</p>
+                <label class="radio-label">
+                  <input type="radio" name="q_7" value="AP" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">решительность (AP)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_7" value="RM" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">авантюризм (RM)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_7" value="EJ" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">способность к компромиссам (EJ)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_7" value="Y" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">чувство юмора (Y)</span>
+                </label>
+              </div>
+              <div class="quiz-section">
+                <p class="quiz-section__title">8. Мультфильмы или эротика?</p>
+                <label class="radio-label">
+                  <input type="radio" name="q_8" value="Y" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">мультфильмы конечно! (Y)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_8" value="TV" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">эротика! (TV)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_8" value="SA" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">а что-нибудь погорячее эротики есть? (SA)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_8" value="EJ" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">я лучше пойду прогуляюсь! (EJ)</span>
+                </label>
+              </div>
+              <div class="quiz-section">
+                <p class="quiz-section__title">9. Какой стихией в сексе ты чаще всего бываешь?</p>
+                <label class="radio-label">
+                  <input type="radio" name="q_9" value="TV" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">я вода, спокойная, расслабленная, текучая, бодрящая (TV)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_9" value="AP" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">я огонь, горячая, пылкая, страстная, активная, креативная (AP)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_9" value="P" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">я земля, спокойная, традиционная, люблю, чтоб все по делу, без финтифлюшек. (P)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_9" value="SI" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">я воздух, растворяюсь полностью в ощущениях и ухожу в астрал (SI)</span>
+                </label>
+              </div>
+              <div class="quiz-section">
+                <p class="quiz-section__title">10. Нравится парень, как поступишь?</p>
+                <label class="radio-label">
+                  <input type="radio" name="q_10" value="RM" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">подойду и познакомлюсь (RM)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_10" value="NR" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">подойду и поцелую (NR)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_10" value="Y" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">обращу на себя внимание: упаду, пролью на него кофе, уроню сумочку ему на ноги (Y)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_10" value="SI" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">буду посылать флюиды в надежде, что он сам меня заметит и подойдет (SI)</span>
+                </label>
+              </div>
+              <div class="quiz-section">
+                <p class="quiz-section__title">11. Какие у тебя любимые цветы?</p>
+                <label class="radio-label">
+                  <input type="radio" name="q_11" value="EY" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">незабудки (EY)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_11" value="SA" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">розы (SA)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_11" value="SI" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">тюльпаны (SI)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_11" value="Y" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">в горшках (Y)</span>
+                </label>
+              </div>
+              <div class="quiz-section">
+                <p class="quiz-section__title">12. Что из перечисленного ты взяла бы с собой на необитаемый остров?</p>
+                <label class="radio-label">
+                  <input type="radio" name="q_12" value="RM" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">ящик шампанского (RM)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_12" value="EJ" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">коробку с книгами или красками (EJ)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_12" value="EY" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">плеер с музыкой (EY)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_12" value="NR" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">вибратор (NR)</span>
+                </label>
+              </div>
+              <div class="quiz-section">
+                <p class="quiz-section__title">13. Твой недостаток, который тебе мешает жить так, как хочешь?</p>
+                <label class="radio-label">
+                  <input type="radio" name="q_13" value="P" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">неуверенность в себе (P)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_13" value="NR" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">комплекс отличницы (NR)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_13" value="EY" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">любовь к сладкому (EY)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_13" value="AP" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">у меня нет недостатков, я совершенство! (AP)</span>
+                </label>
+              </div>
+              <div class="quiz-section">
+                <p class="quiz-section__title">14. Чтобы ты сейчас съела из нижеперечисленного?</p>
+                <label class="radio-label">
+                  <input type="radio" name="q_14" value="TV" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">манго (TV)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_14" value="SA" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">сочный стейк (SA)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_14" value="EY" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">горячий шоколад (EY)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_14" value="AP" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">горячего мужчину (AP)</span>
+                </label>
+              </div>
+              <div class="quiz-section">
+                <p class="quiz-section__title">15. Твой конек?</p>
+                <label class="radio-label">
+                  <input type="radio" name="q_15" value="SA" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">ум (SA)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_15" value="P" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">красота (P)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_15" value="RM" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">смекалка (RM)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="q_15" value="Y" />
+                  <span class="radio-label__icon"></span>
+                  <span class="radio-label__text">мой конёк – горбунок! (Y)</span>
+                </label>
+              </div>
+            </div>
+            <div class="quiz__result">
+              <p><b>Твоя фраза:</b></p>
+              <div class="quiz__result-phrase AP">
+                <p>Absofuckinlutely perfect (AP)</p>
+                <p>Знать, что ты невероятная, крутая, сильная и уверенная. Совсем не важно, выспалась ты или нет, что на тебе надето и какое у тебя настроение.</p>
+                <p>Ты создана быть яркой, ломать стереотипы, создавать свои правила. Бунтуй, будь дерзкой, будь собой!</p>
+              </div>
+              <div class="quiz__result-phrase TV">
+                <p>No titles, just vibes (TV)</p>
+                <p>Впустить в себя гармонию, быть независимой и следовать за своей внутренней энергией. Отбросить наносное: статусы, ярлыки и общественное мнение.</p>
+                <p>То, что тебе нужно – уже есть внутри тебя, следуй за своими истинными желаниями и слушай внутренний голос.</p>
+              </div>
+              <div class="quiz__result-phrase RM">
+                <p>No risk - no magic (RM)</p>
+                <p>Разрешить себе рисковать, ведь риск – это приятный и такой сладкий адреналин. Не бояться действовать и выходить за привычные рамки. Свои. Чужие.  Быть смелее. Сотворить чудо своими руками.</p>
+                <p>Будь бесстрашным воином и таинственным волшебником. Дерзай и создавай свои чудеса!</p>
+              </div>
+              <div class="quiz__result-phrase P">
+                <p>No one is you. And that is your power (P)</p>
+                <p>Признать свою уникальность. Никто другой не имеет тот же багаж за плечами, что и ты. Никто другой не знает, что ты пережила, что чувствовала и чувствуешь. Никто другой не станет тобой.</p>
+                <p>Ты такая одна и в этом заключена твоя сила.  Используй свою уникальность на полную катушку!</p>
+              </div>
+              <div class="quiz__result-phrase EJ">
+                <p>Enjoy the journey (EJ)</p>
+                <p>Наслаждаться! Вся наша жизнь это большое и длинное путешествие, местами захватывающее и местами однообразное, в одни моменты романтичное, в другие – драматичное. Путешествие про дружбу, про любовь, про красоту, про то, что ты захочешь сама! Ты его создатель и главный герой.</p>
+                <p>Наслаждайся жизнью, протаптывай новые тропинки и укатывай широкие дороги!</p>
+              </div>
+              <div class="quiz__result-phrase SI">
+                <p>Space inside (SI)</p>
+                <p>Созерцать свой внутренний мир, дать ему еще больше пространства. Пусть растет, ширится и переливается всеми цветами радуги. Внутри тебя целый космос – идей, планов, мечт, целей, воспоминаний, чувств и эмоций,  ощущений и впечатлений.</p>
+                <p>Наблюдай, наслаждайся, вдохновляйся и делись своим космосом с миром вокруг.</p>
+              </div>
+              <div class="quiz__result-phrase SA">
+                <p>Smart & ambitious (SA)</p>
+                <p>Предвкушать будущие победы и успехи.  Принимать и присваивать уже свершившиеся. Ты многого достигла, а дальше будет еще больше!</p>
+                <p>Не притормаживай, включай пятую скорость и вперед к новым свершениям!</p>
+              </div>
+              <div class="quiz__result-phrase EY">
+                <p>Eternally young (EY)</p>
+                <p>Не обращать внимания на цифры. Цифры это такая условность! Наконец-то можно вести и ощущать себя не в соответствии с цифрами в паспорте, а так, как хочешь ты!</p>
+                <p>Сохраняй в себе свободу и ощущение вечной юности, оно прекрасно!</p>
+              </div>
+              <div class="quiz__result-phrase NR">
+                <p>One rule - no rules (NR)</p>
+                <p>Быть дерзкой. Ощутить, что наши границы только в наших головах. Не признавать устаревшие установки и правила, не довольствоваться малым, не соглашаться на то, что не подходит и не нравится. Правила нужны для того, чтобы их нарушать.</p>
+                <p>Почувствуй свободу. Расправляй крылья и лети. Правила устанавливаешь ты. Если захочешь.</p>
+              </div>
+              <div class="quiz__result-phrase Y">
+                <p>Улыбка - мое оружие (Y)</p>
+                <p>Радоваться! Радоваться каждой мелочи, всему, что происходит вокруг. Улыбаться новому дню, прохожим, деревьям и солнцу, партнерам и конкурентам, друзьям и врагам, успеху и проблемам.</p>
+                <p>Твоя улыбка – это главный козырь. Сила и очарование, тайна и открытость миру. Не держи этот «козырь» в рукаве, пользуйся им всегда!</p>
+              </div>
+            </div>
+            <div class="quiz__buttons">
+              <button class="button js-prev" type="button" disabled>Назад</button>
+              <button class="button js-next" type="button" disabled>Дальше</button>
+              <button class="button js-restart" type="reset">Повторить</button>
+            </div>
+          </form>
+        </div>
+
+      </section>
+
+      //= template/subscribe.html
+    </div>
+  </main>
+
+  //= template/footer.html
+
+  //= template/feedback-popup.html
+
+  //= template/scripts.html
+  <script src="js/quiz.js"></script>
+</body>
+
+</html>
