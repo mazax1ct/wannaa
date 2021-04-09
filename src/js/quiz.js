@@ -30,12 +30,12 @@ function count(array) {
 }
 
 $(document).ready(function() {
-  questionsCount = $('.quiz-section').length;
+  questionsCount = $('.quiz-section').length; //при загрузке страницы обновляем счётчик вопросов
   $('#questionsCount').text(questionsCount);
 });
 
 $(document).on('change', '.quiz-section input', function () {
-  $('.js-next').prop('disabled', '');
+  $('.js-next').prop('disabled', ''); //при выборе радио включаем кнопку вперёд
   return false;
 });
 
@@ -43,20 +43,20 @@ $(document).on('click', '.js-next', function () {
   var currentSlide = $('.quiz-section.is-active'); //текущий вопрос
   currentSlide.removeClass('visible');
 
-  arr = []; //обнуляем массив с выбранными ответами
-
-  $('.quiz-section input:checked').each(function(indx, element) { //пихаем в массив все выбранные ответы
-    arr.push($(element).val());
-  });
-
   if($('.quiz-section:visible').next('.quiz-section').length === 0) { //если нет следующего вопроса
-    $('.quiz__counter').css('opacity', '0'); //скрываем номер вопроса
+    $('.quiz__counter').css('opacity', '0'); //скрываем блок с номером вопроса
     $('.js-prev').hide(); //скрываем кнопки
     $('.js-next').hide(); //скрываем кнопки
-    $('.js-restart').show(); //скрываем кнопки
-    count(arr); //считаем наибольшее количество одинаковых ответов
+    $('.js-restart').show(); //показываем кнопку рестарт
 
-    $('.' + outputClass).addClass('is-active');
+    arr = []; //обнуляем массив с выбранными ответами
+    $('.quiz-section input:checked').each(function(indx, element) { //пихаем в массив все выбранные ответы
+      arr.push($(element).val());
+    });
+
+    count(arr); //считаем наибольшее количество одинаковых ответов и отдаём название класса в переменной outputClass
+    $('.' + outputClass).addClass('is-active'); //показываем блок с полученной фразой
+
     $('.quiz-section.is-active').removeClass('is-active');
     $('.quiz__result').addClass('is-active'); //отображаем блок с результатом
     setTimeout(function() {
@@ -77,33 +77,32 @@ $(document).on('click', '.js-next', function () {
     },300);
   }
 
-  $('.js-prev').prop('disabled', ''); //снимаем disabled  с кнопки назад
+  $('.js-prev').prop('disabled', ''); //снимаем disabled с кнопки назад
 
-  currentQuestion = currentSlide.next('.quiz-section').index() + 1;
-
+  currentQuestion = currentSlide.next('.quiz-section').index() + 1; //обновляем номер вопроса
   $('#currentQuestion').text(currentQuestion);
 
   //console.log(arr);
 });
 
 $(document).on('click', '.js-prev', function () {
-  var currentSlide = $('.quiz-section.is-active');
+  var currentSlide = $('.quiz-section.is-active'); //текущий вопрос
   currentSlide.removeClass('visible');
 
   setTimeout(function() {
-    currentSlide.removeClass('is-active');
+    currentSlide.removeClass('is-active'); //меняем видимость вопроса
     currentSlide.prev('.quiz-section').addClass('is-active');
-    if($('.quiz-section.is-active').prev('.quiz-section').length <= 0){
+    if($('.quiz-section.is-active').prev('.quiz-section').length <= 0) { //если нет предыдущего вопроса выключаем кнопку назад
       $('.js-prev').prop('disabled', 'disabled');
     }
-    setTimeout(function() {
+    setTimeout(function() { //показываем предыдущий вопрос
       currentSlide.prev('.quiz-section').addClass('visible');
     },300);
   },300);
-  $('.js-next').prop('disabled', '');
 
-  currentQuestion = currentSlide.prev('.quiz-section').index() + 1;
+  $('.js-next').prop('disabled', ''); //снимаем disabled с кнопки вперед
 
+  currentQuestion = currentSlide.prev('.quiz-section').index() + 1; //обновляем номер вопроса
   $('#currentQuestion').text(currentQuestion);
 });
 
@@ -133,7 +132,7 @@ $(document).on('click', '.js-restart', function () {
   $('.js-next').show();
   $('.js-restart').hide();*/
 
-  $('.js-next').prop('disabled', 'disabled');
+  $('.js-next').prop('disabled', 'disabled'); //выключаем кнопки
   $('.js-prev').prop('disabled', 'disabled');
-  window.location.reload();
+  window.location.reload(); //перезагружаем страницу
 });
