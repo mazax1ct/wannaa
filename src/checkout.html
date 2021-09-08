@@ -2,218 +2,304 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Оформление заказа</title>
+    <title>Оформление заказа</title>
 
-  <meta name="description" content="">
+    <meta name="description" content="">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
 
-  //= template/favicon.html
+    //= template/favicon.html
 
-  //= template/fonts-preload.html
+    //= template/fonts-preload.html
 
-  //= template/style.html
+    //= template/style.html
 </head>
 
 <body class="checkout">
-  //= template/sprite.html
+    //= template/sprite.html
 
-  //= template/header.html
+    //= template/header.html
 
-  <main class="page-content">
-    <div class="container">
-      <form class="checkout__body">
-        <section class="checkout__goods">
-          <div class="checkout__title-block">
-            <h1 class="decorated-title-2"><span class="mobile">Оформление заказа</span> <span class="desktop">Ваш заказ</span></h1>
-            <p class="checkout__goods-count">3 товара</p>
-          </div>
-          <ul class="checkout__goods-list">
-            <li class="checkout__goods-item">
-              <div class="goods">
-                <button class="goods__delete" type="button" title="Удалить"><svg class="goods__delete-icon"><use xlink:href="#close"></use></svg></button>
-                <picture class="goods__picture">
-                  <source srcset="images/content/checkout/desktop/1.jpg, images/content/checkout/desktop/1@2x.jpg 2x" media="(min-width: 1024px)">
-                  <img class="goods__image" src="images/content/checkout/mobile/1.jpg" srcset="images/content/checkout/mobile/1@2x.jpg 2x" alt="alt">
-                </picture>
-                <div class="goods__info">
-                  <p class="goods__title">Черная рубашка</p>
-                  <div class="goods__props">
-                    <p class="goods__prop"><span class="goods__prop-title">Цвет:</span> Черный</p>
-                    <div class="goods__prop">
-                      <span class="goods__prop-title">Размер:</span>
-                      <div class="select-wrapper select-wrapper--small">
-                        <select class="js-select">
-                          <option>S</option>
-                          <option>M</option>
-                          <option>L</option>
-                        </select>
-                      </div>
+    <main class="page-content">
+        <div class="container">
+            <form class="checkout__body">
+                <section class="checkout__goods">
+                    <div class="checkout__title-block">
+                        <h1 class="decorated-title-2"><span class="mobile">Оформление заказа</span> <span class="desktop">Ваш заказ</span></h1>
+                        <p class="checkout__goods-count">3 товара</p>
                     </div>
-                  </div>
-                  <p class="goods__prop"><span class="goods__prop-title">Принт:</span> Банан</p>
-                  <p class="goods__prop"><span class="goods__prop-title">Фраза:</span> <span class="goods__prop-phrase">No one is you. And that is your power</span></p>
-                  <div class="goods__quntity">
-                    <p class="goods__quntity-title">Количество:</p>
-                    <button class="goods__quntity-button goods__quntity-button--minus" type="button" title="Меньше">-</button>
-                    <input class="goods__quntity-input" type="text" value="1" readonly>
-                    <button class="goods__quntity-button goods__quntity-button--plus" type="button" title="Больше">+</button>
-                  </div>
-                  <p class="goods__price">26 000 ₽</p>
-                </div>
-              </div>
-            </li>
-            <li class="checkout__goods-item">
-              <div class="goods">
-                <button class="goods__delete" type="button" title="Удалить"><svg class="goods__delete-icon"><use xlink:href="#close"></use></svg></button>
-                <picture class="goods__picture">
-                  <source srcset="images/content/checkout/desktop/1.jpg, images/content/checkout/desktop/1@2x.jpg 2x" media="(min-width: 1024px)">
-                  <img class="goods__image" src="images/content/checkout/mobile/1.jpg" srcset="images/content/checkout/mobile/1@2x.jpg 2x" alt="alt">
-                </picture>
-                <div class="goods__info">
-                  <p class="goods__title">Белая футболка</p>
-                  <div class="goods__props">
-                    <p class="goods__prop"><span class="goods__prop-title">Цвет:</span> Белый</p>
-                    <div class="goods__prop">
-                      <span class="goods__prop-title">Размер:</span>
-                      <div class="select-wrapper select-wrapper--small">
-                        <select class="js-select">
-                          <option>S</option>
-                          <option>M</option>
-                          <option>L</option>
-                        </select>
-                      </div>
+                    <ul class="checkout__goods-list">
+                        <li class="checkout__goods-item">
+                            <div class="goods">
+                                <button class="goods__delete" type="button" title="Удалить"><svg class="goods__delete-icon">
+                                        <use xlink:href="#close"></use>
+                                    </svg></button>
+                                <picture class="goods__picture">
+                                    <source srcset="images/content/checkout/desktop/1.jpg, images/content/checkout/desktop/1@2x.jpg 2x" media="(min-width: 1024px)">
+                                    <img class="goods__image" src="images/content/checkout/mobile/1.jpg" srcset="images/content/checkout/mobile/1@2x.jpg 2x" alt="alt">
+                                </picture>
+                                <div class="goods__info">
+                                    <p class="goods__title">Черная рубашка</p>
+                                    <div class="goods__props">
+                                        <p class="goods__prop"><span class="goods__prop-title">Цвет:</span> Черный</p>
+                                        <div class="goods__prop">
+                                            <span class="goods__prop-title">Размер:</span>
+                                            <div class="select-wrapper select-wrapper--small">
+                                                <select class="js-select">
+                                                    <option>S</option>
+                                                    <option>M</option>
+                                                    <option>L</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="goods__prop"><span class="goods__prop-title">Принт:</span> Банан</p>
+                                    <p class="goods__prop"><span class="goods__prop-title">Фраза:</span> <span class="goods__prop-phrase">No one is you. And that is your power</span></p>
+                                    <div class="goods__quntity">
+                                        <p class="goods__quntity-title">Количество:</p>
+                                        <button class="goods__quntity-button goods__quntity-button--minus" type="button" title="Меньше">-</button>
+                                        <input class="goods__quntity-input" type="text" value="1" readonly>
+                                        <button class="goods__quntity-button goods__quntity-button--plus" type="button" title="Больше">+</button>
+                                    </div>
+                                    <p class="goods__price">26 000 ₽</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="checkout__goods-item">
+                            <div class="goods">
+                                <button class="goods__delete" type="button" title="Удалить"><svg class="goods__delete-icon">
+                                        <use xlink:href="#close"></use>
+                                    </svg></button>
+                                <picture class="goods__picture">
+                                    <source srcset="images/content/checkout/desktop/1.jpg, images/content/checkout/desktop/1@2x.jpg 2x" media="(min-width: 1024px)">
+                                    <img class="goods__image" src="images/content/checkout/mobile/1.jpg" srcset="images/content/checkout/mobile/1@2x.jpg 2x" alt="alt">
+                                </picture>
+                                <div class="goods__info">
+                                    <p class="goods__title">Белая футболка</p>
+                                    <div class="goods__props">
+                                        <p class="goods__prop"><span class="goods__prop-title">Цвет:</span> Белый</p>
+                                        <div class="goods__prop">
+                                            <span class="goods__prop-title">Размер:</span>
+                                            <div class="select-wrapper select-wrapper--small">
+                                                <select class="js-select">
+                                                    <option>S</option>
+                                                    <option>M</option>
+                                                    <option>L</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="goods__prop"><span class="goods__prop-title">Принт:</span> Лягушка</p>
+                                    <p class="goods__prop"><span class="goods__prop-title">Фраза:</span> <span class="goods__prop-phrase">Absofuckinlutely perfect</span></p>
+                                    <div class="goods__quntity">
+                                        <p class="goods__quntity-title">Количество:</p>
+                                        <button class="goods__quntity-button goods__quntity-button--minus" type="button" title="Меньше">-</button>
+                                        <input class="goods__quntity-input" type="text" value="1" readonly>
+                                        <button class="goods__quntity-button goods__quntity-button--plus" type="button" title="Больше">+</button>
+                                    </div>
+                                    <p class="goods__price">4 900 ₽</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="checkout__goods-item">
+                            <div class="goods">
+                                <button class="goods__delete" type="button" title="Удалить"><svg class="goods__delete-icon">
+                                        <use xlink:href="#close"></use>
+                                    </svg></button>
+                                <picture class="goods__picture">
+                                    <source srcset="images/content/checkout/desktop/1.jpg, images/content/checkout/desktop/1@2x.jpg 2x" media="(min-width: 1024px)">
+                                    <img class="goods__image" src="images/content/checkout/mobile/1.jpg" srcset="images/content/checkout/mobile/1@2x.jpg 2x" alt="alt">
+                                </picture>
+                                <div class="goods__info">
+                                    <p class="goods__title">Шорты</p>
+                                    <div class="goods__props">
+                                        <p class="goods__prop"><span class="goods__prop-title">Цвет:</span> Черный</p>
+                                        <div class="goods__prop">
+                                            <span class="goods__prop-title">Размер:</span>
+                                            <div class="select-wrapper select-wrapper--small">
+                                                <select class="js-select">
+                                                    <option>S</option>
+                                                    <option selected>M</option>
+                                                    <option>L</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="goods__prop"><span class="goods__prop-title">Принт:</span> Стрекоза</p>
+                                    <p class="goods__prop"><span class="goods__prop-title">Фраза:</span> <span class="goods__prop-phrase">Space inside</span></p>
+                                    <div class="goods__quntity">
+                                        <p class="goods__quntity-title">Количество:</p>
+                                        <button class="goods__quntity-button goods__quntity-button--minus" type="button" title="Меньше">-</button>
+                                        <input class="goods__quntity-input" type="text" value="1" readonly>
+                                        <button class="goods__quntity-button goods__quntity-button--plus" type="button" title="Больше">+</button>
+                                    </div>
+                                    <p class="goods__price">15 000 ₽</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="checkout__goods-promocode">
+                        <div class="checkout__goods-promocode-inner">
+                            <input class="input" type="text" placeholder="Промокод">
+                            <button class="button button--type_2" type="button">Применить</button>
+                        </div>
+                        <div class="checkout__goods-promocodes">
+                            <div class="checkout__goods-promocodes-item">
+                                Промокод 2021
+                                <button type="button" title="Удалить">
+                                    <svg>
+                                        <use xlink:href="#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="checkout__goods-promocodes-item">
+                                Промокод 2021
+                                <button type="button" title="Удалить">
+                                    <svg>
+                                        <use xlink:href="#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="checkout__goods-promocodes-item">
+                                Промокод 2021
+                                <button type="button" title="Удалить">
+                                    <svg>
+                                        <use xlink:href="#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="checkout__goods-promocodes-item">
+                                Промокод 2021
+                                <button type="button" title="Удалить">
+                                    <svg>
+                                        <use xlink:href="#close"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <p class="goods__prop"><span class="goods__prop-title">Принт:</span> Лягушка</p>
-                  <p class="goods__prop"><span class="goods__prop-title">Фраза:</span> <span class="goods__prop-phrase">Absofuckinlutely perfect</span></p>
-                  <div class="goods__quntity">
-                    <p class="goods__quntity-title">Количество:</p>
-                    <button class="goods__quntity-button goods__quntity-button--minus" type="button" title="Меньше">-</button>
-                    <input class="goods__quntity-input" type="text" value="1" readonly>
-                    <button class="goods__quntity-button goods__quntity-button--plus" type="button" title="Больше">+</button>
-                  </div>
-                  <p class="goods__price">4 900 ₽</p>
-                </div>
-              </div>
-            </li>
-            <li class="checkout__goods-item">
-              <div class="goods">
-                <button class="goods__delete" type="button" title="Удалить"><svg class="goods__delete-icon"><use xlink:href="#close"></use></svg></button>
-                <picture class="goods__picture">
-                  <source srcset="images/content/checkout/desktop/1.jpg, images/content/checkout/desktop/1@2x.jpg 2x" media="(min-width: 1024px)">
-                  <img class="goods__image" src="images/content/checkout/mobile/1.jpg" srcset="images/content/checkout/mobile/1@2x.jpg 2x" alt="alt">
-                </picture>
-                <div class="goods__info">
-                  <p class="goods__title">Шорты</p>
-                  <div class="goods__props">
-                    <p class="goods__prop"><span class="goods__prop-title">Цвет:</span> Черный</p>
-                    <div class="goods__prop">
-                      <span class="goods__prop-title">Размер:</span>
-                      <div class="select-wrapper select-wrapper--small">
-                        <select class="js-select">
-                          <option>S</option>
-                          <option selected>M</option>
-                          <option>L</option>
-                        </select>
-                      </div>
+                    <div class="checkout__goods-result">
+                        <p class="checkout__goods-result-item"><span>Товаров на:</span> <span>45 000 ₽</span></p>
+                        <p class="checkout__goods-result-item"><span>Доставка:</span> <span>900 ₽</span></p>
+                        <p class="checkout__goods-result-item checkout__goods-result-item--big"><span>Всего:</span> <span>45 900 ₽</span></p>
                     </div>
-                  </div>
-                  <p class="goods__prop"><span class="goods__prop-title">Принт:</span> Стрекоза</p>
-                  <p class="goods__prop"><span class="goods__prop-title">Фраза:</span> <span class="goods__prop-phrase">Space inside</span></p>
-                  <div class="goods__quntity">
-                    <p class="goods__quntity-title">Количество:</p>
-                    <button class="goods__quntity-button goods__quntity-button--minus" type="button" title="Меньше">-</button>
-                    <input class="goods__quntity-input" type="text" value="1" readonly>
-                    <button class="goods__quntity-button goods__quntity-button--plus" type="button" title="Больше">+</button>
-                  </div>
-                  <p class="goods__price">15 000 ₽</p>
+                </section>
+                <div class="checkout__form">
+                    <section class="checkout__form-section">
+                        <h2>Получатель заказа</h2>
+                        <label class="label">
+                            <span class="label__text">ФИО</span>
+                            <input class="input" type="text" value="" placeholder="">
+                        </label>
+                        <label class="label">
+                            <span class="label__text">Номер телефона</span>
+                            <input class="js-phone-mask input" type="text" value="" placeholder="">
+                        </label>
+                        <label class="label">
+                            <span class="label__text">Email</span>
+                            <input class="input" type="email" value="" placeholder="">
+                        </label>
+                    </section>
+                    <section class="checkout__form-section">
+                        <h2>Доставка</h2>
+                        <label class="label">
+                            <span class="label__text">Город</span>
+                            <input class="input" type="text" value="" placeholder="">
+                        </label>
+                        <label class="label">
+                            <span class="label__text">Адрес</span>
+                            <input class="input" type="text" value="" placeholder="">
+                        </label>
+                        <p class="label">
+                            <span class="label__text">Способ доставки</span>
+                        </p>
+                        <div class="checkout__delivery">
+                            <div class="checkout__delivery-item">
+                                <label class="checkout__delivery-label">
+                                    <input type="radio" name="delivery" value="delivery_1" checked>
+                                    <span class="checkout__delivery-label-icon"></span>
+                                    <span class="checkout__delivery-label-title">Курьер</span>
+                                    <span class="checkout__delivery-label-prop">1-2 дня</span>
+                                    <span class="checkout__delivery-label-prop">400 ₽</span>
+                                </label>
+                            </div>
+                            <div class="checkout__delivery-item">
+                                <label class="checkout__delivery-label">
+                                    <input type="radio" name="delivery" value="delivery_1">
+                                    <span class="checkout__delivery-label-icon"></span>
+                                    <span class="checkout__delivery-label-title">CDEK</span>
+                                    <span class="checkout__delivery-label-prop">3-5 дней</span>
+                                    <span class="checkout__delivery-label-prop">800 ₽</span>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="checkout__form-section">
+                        <h2>Оплата</h2>
+                        <!--<p>Для определения способов оплаты с Вами свяжется наш менеджер.</p>-->
+                        <textarea class="checkout__form-comment textarea" placeholder="Добавить комментарий к заказу"></textarea>
+                        <div class="checkout__form-promocode">
+                            <div class="checkout__form-promocode-inner">
+                                <input class="input" type="text" placeholder="Промокод">
+                                <button class="button button--type_2" type="button">Применить</button>
+                            </div>
+                            <div class="checkout__form-promocodes">
+                                <div class="checkout__form-promocodes-item">
+                                    Промокод 2021
+                                    <button type="button" title="Удалить">
+                                        <svg>
+                                            <use xlink:href="#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="checkout__form-promocodes-item">
+                                    Промокод 2021
+                                    <button type="button" title="Удалить">
+                                        <svg>
+                                            <use xlink:href="#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="checkout__form-promocodes-item">
+                                    Промокод 2021
+                                    <button type="button" title="Удалить">
+                                        <svg>
+                                            <use xlink:href="#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="checkout__form-promocodes-item">
+                                    Промокод 2021
+                                    <button type="button" title="Удалить">
+                                        <svg>
+                                            <use xlink:href="#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout__form-result">
+                            <p class="checkout__form-result-item"><span>Товаров на:</span> <span>45 000 ₽</span></p>
+                            <p class="checkout__form-result-item"><span>Доставка:</span> <span>900 ₽</span></p>
+                            <p class="checkout__form-result-item checkout__form-result-item--big"><span>Всего:</span> <span>45 900 ₽</span></p>
+                        </div>
+                        <a class="checkout__form-submit button button--type_2" href="checkout-finish.html">Оформить заказ</a>
+                        <p class="checkout__form-note">Нажимая на кнопку «Оформить заказ», вы соглашаетесь с <a href="#" target="_blank">политикой конфиденциальности</a>.</p>
+                    </section>
                 </div>
-              </div>
-            </li>
-          </ul>
-          <div class="checkout__goods-result">
-            <p class="checkout__goods-result-item"><span>Товаров на:</span> <span>45 000 ₽</span></p>
-            <p class="checkout__goods-result-item"><span>Доставка:</span> <span>900 ₽</span></p>
-            <p class="checkout__goods-result-item checkout__goods-result-item--big"><span>Всего:</span> <span>45 900 ₽</span></p>
-          </div>
-        </section>
-        <div class="checkout__form">
-          <section class="checkout__form-section">
-            <h2>Получатель заказа</h2>
-            <label class="label">
-              <span class="label__text">ФИО</span>
-              <input class="input" type="text" value="" placeholder="">
-            </label>
-            <label class="label">
-              <span class="label__text">Номер телефона</span>
-              <input class="js-phone-mask input" type="text" value="" placeholder="">
-            </label>
-            <label class="label">
-              <span class="label__text">Email</span>
-              <input class="input" type="email" value="" placeholder="">
-            </label>
-          </section>
-          <section class="checkout__form-section">
-            <h2>Доставка</h2>
-            <label class="label">
-              <span class="label__text">Город</span>
-              <input class="input" type="text" value="" placeholder="">
-            </label>
-            <label class="label">
-              <span class="label__text">Адрес</span>
-              <input class="input" type="text" value="" placeholder="">
-            </label>
-            <p class="label">
-              <span class="label__text">Способ доставки</span>
-            </p>
-            <div class="checkout__delivery">
-              <div class="checkout__delivery-item">
-                <label class="checkout__delivery-label">
-                  <input type="radio" name="delivery" value="delivery_1" checked>
-                  <span class="checkout__delivery-label-icon"></span>
-                  <span class="checkout__delivery-label-title">Курьер</span>
-                  <span class="checkout__delivery-label-prop">1-2 дня</span>
-                  <span class="checkout__delivery-label-prop">400 ₽</span>
-                </label>
-              </div>
-              <div class="checkout__delivery-item">
-                <label class="checkout__delivery-label">
-                  <input type="radio" name="delivery" value="delivery_1">
-                  <span class="checkout__delivery-label-icon"></span>
-                  <span class="checkout__delivery-label-title">CDEK</span>
-                  <span class="checkout__delivery-label-prop">3-5 дней</span>
-                  <span class="checkout__delivery-label-prop">800 ₽</span>
-                </label>
-              </div>
-            </div>
-          </section>
-          <section class="checkout__form-section">
-            <h2>Оплата</h2>
-            <!--<p>Для определения способов оплаты с Вами свяжется наш менеджер.</p>-->
-            <textarea class="checkout__form-comment textarea" placeholder="Добавить комментарий к заказу"></textarea>
-            <div class="checkout__form-result">
-              <p class="checkout__form-result-item"><span>Товаров на:</span> <span>45 000 ₽</span></p>
-              <p class="checkout__form-result-item"><span>Доставка:</span> <span>900 ₽</span></p>
-              <p class="checkout__form-result-item checkout__form-result-item--big"><span>Всего:</span> <span>45 900 ₽</span></p>
-            </div>
-            <a class="checkout__form-submit button button--type_2" href="checkout-finish.html">Оформить заказ</a>
-            <p class="checkout__form-note">Нажимая на кнопку «Оформить заказ», вы соглашаетесь с <a href="#" target="_blank">политикой конфиденциальности</a>.</p>
-          </section>
+            </form>
         </div>
-      </form>
-    </div>
-  </main>
+    </main>
 
-  //= template/footer.html
+    //= template/footer.html
 
-  //= template/feedback-popup.html
+    //= template/feedback-popup.html
 
-  //= template/scripts.html
+    //= template/scripts.html
 </body>
 
 </html>
